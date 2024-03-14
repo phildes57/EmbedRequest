@@ -1,0 +1,2054 @@
+<addr>
+librairi="_EAnim.AnimComponent.librairi"
+fillrect="_EAnim.AnimComponent.fillrect"
+Ph_Sprite="_EAnim.AnimComponent.Ph_Sprite"
+tabobj="_EAnim.AnimComponent.tabobj"
+Ph_Piece="_EAnim.AnimComponent.Ph_Piece"
+PhKey="_EAnim.AnimComponent.PhKey"
+couchtab="_EAnim.AnimComponent.couchtab"
+couche="_EAnim.AnimComponent.couche"
+actScript="_EAnim.AnimComponent.Action.PhActionScript"
+txtaff="_EAnim.AnimComponent.txtaff"
+txtstyle="_EAnim.AnimComponent.txtstyle"
+txttab="_EAnim.AnimComponent.txttab"
+AttrsEditor="_EAnim.AnimComponent.AttrsEditors.AttrsEditor"
+PhColorGradient="phUtil.PhComponent.PhColorGradient"
+PhColorTab="phUtil.PhComponent.PhColorTab"
+PhColor="phUtil.PhComponent.PhColor"
+TextRich="_EAnim.AnimComponent.TextRich"
+PhListGroupAccess="_EAnim.FensVolantes.FenWithSpecificComponent.PhListGroupAccess"
+</addr>
+<eanim>
+<program>"E-Anim/html"</program>
+<version>2002045</version>
+<scale>1000</scale>
+<url_js>"! (No url)\ "</url_js>
+<projet><fond>1000 900 255 255 255 61</fond>
+<attrs>16 1 6 -1 -1 3 </attrs>
+</projet><composants><newlib><librairi>
+<libattrs>fond_opaque nom_var_not_globales</libattrs>
+<attrs>310 307</attrs>
+</librairi>
+</newlib><table>
+
+//------- Compos # 0 -------------------------------
+<fillrect><id>0 4 "vide" 1
+</id>
+<coords>0 0 0 0 non_icon</coords>
+-1 0 0 0 1</fillrect>
+
+
+//------- Compos # 1 -------------------------------
+<Ph_Sprite>
+<id>1 11 "ecrandebase" 1
+</id>
+<attrs>100 1 10 1  1024 </attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "w_embed" 0
+</id>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 26</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 24</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 2</attrs>
+<table>
+0 <couche> 0 0 0</couche>
+1 <null></null>
+</table>
+</couchtab>
+</tabobj>
+<face_common><css>"""""""""""                                                                                              /*refresh*/WvBubblePlayer.refreshMax=1;/*refresh*/"""""
+</css>
+</face_common> </Ph_Sprite>
+
+
+//------- Compos # 2 -------------------------------
+<Ph_Sprite>
+<id>2 11 "anim__0" 1
+</id>
+<attrs>100 7 20 1  1024 </attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "w_cp" 0
+<options>
+_yMouse 1 7
+_xMouse 1 193
+</options>
+</id>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 3</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 21</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 293</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+1 <Ph_Piece><id>-1 15 "sans_nom19758" 0
+<options>
+_yMouse 1 11
+_xMouse 1 64
+</options>
+</id>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 7</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 171</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 4</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 6</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+2 <Ph_Piece><id>-1 15 "w_bt_request_embed" 0
+<options>
+_yMouse 1 7
+_xMouse 1 70
+</options>
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 5</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
+"import(WvEmbedMaster);<br>WvEmbedMaster.test();"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+3 <Ph_Piece><id>-1 15 "_stop__phi_" 0
+</id>
+<attrs>1 0 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+4 <Ph_Piece><id>-1 15 "sans_nom16" 0
+<options>
+_yMouse 1 16
+_xMouse 1 346
+</options>
+</id>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 8</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 4</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 32</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 5</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+5 <Ph_Piece><id>-1 15 "sans_nom31" 0
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 10</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 21</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 48</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 4</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
+"<br>let script = <br>&quot;async function foncAppel(  ){\\n&quot;+<br>&quot;    let result = await window.wvEmbedRequest.postWait(&apos;mon message&apos;, &apos;nom_fonc_embed&apos;, 10000);//10000=delai max\\n&quot;+<br>&quot;    alert(result.answer);\\n&quot;+<br>&quot;}&quot;;<br>navigator.clipboard.writeText(script);"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+6 <Ph_Piece><id>-1 15 "w_button_simple" 0
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 301</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 457</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 124</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 3</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
+"let script = <br>&quot;async function foncAppel( ){\\n&quot;+<br>&quot;try{ // surveillance des erreurs\\n&quot;+ <br>&quot;let result = await window.wvEmbedRequest.postWait(&apos;Coucou&apos;, &apos;fonc1&apos;, 10000);//10000 delai max\\n&quot;+<br>&quot;    alert(result.answer); // retour sans erreur lev&eacute;e\\n&quot;+ <br>&quot;}catch(e){alert(e);} // capture des erreur\\n&quot;+<br>&quot;};&quot;;<br><br>navigator.clipboard.writeText(script); "
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>30 7</attrs>
+<table>
+0 <couche> 0 6 0</couche>
+1 <couche> 0 5 2</couche>
+2 <couche> 0 4 3</couche>
+3 <couche> 0 0 6</couche>
+4 <couche> 0 1 5</couche>
+5 <couche> 0 2 4</couche>
+6 <couche> 0 3 1</couche>
+</table>
+</couchtab>
+</tabobj>
+<guidesLine><guideLineV>22 164</guideLineV> </guidesLine>
+</Ph_Sprite>
+
+
+//------- Compos # 3 -------------------------------
+<txtaff><id>3 2 "txt" 0
+</id>
+<coords>0 0 677 15 non_icon</coords>
+<txtstyle>"sans_nom5" "Arial" 10 0 0 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"&lt;html5&gt;&lt;embed id=&quot;cristalputer&quot; src=&quot;wvembed.html&quot; wmode=&quot;transparent&quot; style=&quot;width: 1000px; height: 800px;&quot; /&gt;"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 4 -------------------------------
+<fillrect><id>4 4 "adjust" 0
+</id>
+<coords>0 0 154 27 non_icon</coords>
+0 0 0 0 1</fillrect>
+
+
+//------- Compos # 5 -------------------------------
+<Ph_Sprite>
+<id>5 11 "anim_sans_nom" 1
+</id>
+<attrs>100 2 10 1  33555458 </attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "adjust" 0
+<options>
+_yMouse 1 13
+_xMouse 1 119
+</options>
+<AttrsEditor>
+"adjust();"
+<Params> 0 </Params>
+</AttrsEditor>
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 _flag2 13349 X X "adjust();"X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 4</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+0 <PhKey>1 100</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+1 <Ph_Piece><id>-1 15 "sans_nom9" 0
+<options>
+_yMouse 1 12
+_xMouse 1 45
+</options>
+</id>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 6</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 49</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 2</attrs>
+<table>
+0 <couche> 0 1 0</couche>
+1 <couche> 0 0 1</couche>
+</table>
+</couchtab>
+</tabobj>
+<face_common><background><PhColorGradient>0 mult 100 2800 5300 2800 2600 1 <PhColorTab><attrs>10 1</attrs>
+<PhColor>
+204 126 247 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> 0 <border>17 4 <PhColorGradient>0 mult 100 0 2000 10000 2000 1 <PhColorTab><attrs>10 1</attrs>
+<PhColor>
+226 187 246 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> </border> <overflow>0<overflow>-2147483648</background>
+</face_common> </Ph_Sprite>
+
+
+//------- Compos # 6 -------------------------------
+<txtaff><id>6 2 "txt" 0
+</id>
+<coords>0 0 40 17 non_icon</coords>
+<txtstyle>"sans_nom10" "Arial" 12 1 0 0 255 255 255 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"TEST"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 7 -------------------------------
+<txtaff><id>7 2 "txt" 0
+</id>
+<coords>0 0 185 22 non_icon</coords>
+<txtstyle>"sans_nom19759" "Arial" 16 0 0 0 169 1 254 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"page HTML principale"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 8 -------------------------------
+<Ph_Sprite>
+<id>8 11 "anim__15" 1
+</id>
+<attrs>100 1 10 1  33555458 </attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "adjust" 0
+<options>
+_yMouse 1 8
+_xMouse 1 347
+</options>
+<AttrsEditor>
+"adjust();"
+<Params> 0 </Params>
+</AttrsEditor>
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 _flag2 13349 X X "adjust();"X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 9</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+0 <PhKey>1 100</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 1</attrs>
+<table>
+0 <couche> 0 0 0</couche>
+</table>
+</couchtab>
+</tabobj>
+<face_common><background><PhColorGradient>0 mult 100 3000 29800 3000 5600 1 <PhColorTab><attrs>10 1</attrs>
+<PhColor>
+237 222 250 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> 0 <overflow>0<overflow>-1</background>
+</face_common> </Ph_Sprite>
+
+
+//------- Compos # 9 -------------------------------
+<fillrect><id>9 4 "adjust" 0
+</id>
+<coords>0 0 656 242 non_icon</coords>
+0 0 0 0 1</fillrect>
+
+
+//------- Compos # 10 -------------------------------
+<TextRich><id>10 24 "textrich" 0
+</id>
+<coords>0 0 638 221 non_icon</coords>
+<text><linespace=0><alignement=0><font=Arial><style=0><size=14><color=0000FF><u=0><color_u=000000><br>
+<void><size=12><color=000000>-<size=16><color=0000FF>-&nbsp;bleu&nbsp;:&nbsp;&agrave;&nbsp;recopier&nbsp;tel&nbsp;quel<color=008000><br>
+<void>-&nbsp;vert&nbsp;:&nbsp;valeur&nbsp;inscrite&nbsp;en&nbsp;param&egrave;tres,&nbsp;dans&nbsp;l&apos;appel&nbsp;de&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principale<color=CB09CB><br>
+<void>-&nbsp;violet&nbsp;:&nbsp;valeur&nbsp;r&eacute;cup&eacute;r&eacute;&nbsp;dans&nbsp;le&nbsp;script&nbsp;de&nbsp;la&nbsp;page&nbsp;principal<size=14><color=0000FF><br>
+<void><size=16><color=000000>______________________________________________________________<br>
+<void>Exemple&nbsp;d&apos;appel&nbsp;dans&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principal<br>
+<void><style=2><color=0000FF><br>
+<void>async&nbsp;function<color=000080>&nbsp;<color=008000>foncAppel<color=0000FF>(&nbsp;&nbsp;){&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<color=4D4D6B>&nbsp;<style=0><size=14><color=6B6B83>//&nbsp;&nbsp;message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fonction&nbsp;&nbsp;delai&nbsp;max<size=16><color=000000><br>
+<void>&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;<style=2><color=CB09CB>result<style=0><color=000000>&nbsp;=&nbsp;<style=2><color=0000FF>await<style=0><color=000000>&nbsp;<style=2><color=0000FF>window.wvEmbedRequest.postWait(<color=008000>&quot;Coucou&quot;<color=000000>,&nbsp;<color=008000>&quot;fonc1&quot;,<color=000000>&nbsp;<style=0><color=008000>10000<style=2><color=0000FF>);<color=000000><br>
+<void>&nbsp;&nbsp;&nbsp;&nbsp;<style=0>alert(<style=2><color=CB09CB>result.<color=0000FF>answer<style=0><color=000000>);<style=2><color=0000FF><br>
+<void>}<end></text>
+<end>20 <l>0 294 367 0 0 0 80 80 100 180 80 260 180 440 60 500 180 680 160 840 80 920 80 1000 80 1080 180 1260 80 1340 100 1440 180 1620 160 1780 180 1960 180 2140 80 2220 180 2400 100 2500 80 2580 80 2660 180 2840 60 2900 80 2980 180 3160 160 3320 180 3500 60 </l>
+<l>367 294 367 0 0 0 100 100 80 180 140 320 180 500 100 600 80 680 80 760 80 840 80 920 140 1060 180 1240 60 1300 180 1480 160 1640 100 1740 80 1820 80 1900 160 2060 160 2220 160 2380 100 2480 80 2560 80 2640 180 2820 80 2900 180 3080 160 3240 80 3320 180 3500 180 3680 100 3780 180 3960 260 4220 180 4400 80 4480 100 4580 180 4760 160 4920 80 5000 80 5080 180 5260 180 5440 160 5600 160 5760 80 5840 60 5900 60 5960 180 6140 180 6320 180 6500 180 6680 60 6740 80 6820 180 7000 180 7180 80 7260 60 7320 180 7500 80 7580 180 7760 180 7940 180 8120 180 8300 80 8380 220 8600 180 8780 260 9040 180 9220 80 9300 180 9480 100 9580 80 9660 160 9820 160 9980 80 10060 180 10240 180 10420 60 10480 180 </l>
+<l>735 294 367 0 0 0 100 100 80 180 140 320 80 400 180 580 60 640 180 820 80 900 80 980 80 1060 80 1140 140 1280 180 1460 60 1520 180 1700 160 1860 100 1960 80 2040 100 2140 180 2320 160 2480 160 2640 180 2820 180 3000 100 3100 180 3280 80 3360 180 3540 180 3720 160 3880 160 4040 80 4120 60 4180 180 4360 80 4440 160 4600 160 4760 100 4860 80 4940 180 5120 80 5200 80 5280 180 5460 180 5640 80 5720 60 5780 180 5960 80 6040 180 6220 180 6400 180 6580 180 6760 80 6840 180 7020 100 7120 80 7200 160 7360 160 7520 80 7600 180 7780 180 7960 60 </l>
+<l>1103 294 367 0 0 0 180 180 180 360 180 540 180 720 180 900 180 1080 180 1260 180 1440 180 1620 180 1800 180 1980 180 2160 180 2340 180 2520 180 2700 180 2880 180 3060 180 3240 180 3420 180 3600 180 3780 180 3960 180 4140 180 4320 180 4500 180 4680 180 4860 180 5040 180 5220 180 5400 180 5580 180 5760 180 5940 180 6120 180 6300 180 6480 180 6660 180 6840 180 7020 180 7200 180 7380 180 7560 180 7740 180 7920 180 8100 180 8280 180 8460 180 8640 180 8820 180 9000 180 9180 180 9360 180 9540 180 9720 180 9900 180 10080 180 10260 180 10440 180 10620 180 10800 180 10980 180 </l>
+<l>1471 294 367 0 0 0 220 220 140 360 180 540 260 800 180 980 60 1040 180 1220 80 1300 180 1480 60 1540 180 1720 180 1900 180 2080 180 2260 60 2320 80 2400 180 2580 180 2760 160 2920 160 3080 80 3160 60 3220 180 3400 80 3480 180 3660 180 3840 180 4020 180 4200 80 4280 220 4500 180 4680 260 4940 180 5120 80 5200 180 5380 100 5480 80 5560 160 5720 160 5880 80 5960 180 6140 180 6320 60 </l>
+<l>1839 0 367 0 0 </l>
+<l>2207 294 367 0 0 0 180 180 180 360 180 540 200 740 180 920 80 1000 100 1100 200 1300 200 1500 180 1680 100 1780 80 1860 200 2060 200 2260 80 2340 100 2440 200 2640 200 2840 180 3020 220 3240 200 3440 200 3640 180 3820 80 3900 100 4000 80 4080 80 4160 100 4260 120 4380 80 4460 80 4540 80 4620 80 4700 80 4780 80 4860 80 4940 80 5020 80 5100 80 5180 80 5260 80 5340 80 5420 80 5500 80 5580 80 5660 80 5740 80 5820 80 5900 80 5980 80 6060 80 6140 80 6220 80 6300 80 6380 80 6460 80 6540 80 6620 80 6700 80 6780 80 6860 80 6940 80 7020 80 7100 80 7180 80 7260 80 7340 80 7420 80 7500 80 7580 80 7660 80 7740 80 7820 80 7900 80 7980 80 8060 80 8140 80 8220 80 8300 80 8380 80 8460 80 8540 80 8620 220 8840 160 9000 140 9140 140 9280 160 9440 160 9600 160 9760 80 9840 80 9920 80 10000 80 10080 80 10160 80 10240 160 10400 160 10560 140 10700 80 10780 60 10840 160 11000 160 11160 80 11240 80 11320 160 11480 160 11640 60 11700 160 11860 60 11920 80 12000 220 12220 160 12380 120 </l>
+<l>2575 294 367 0 0 0 80 80 80 160 80 240 80 320 60 380 180 560 80 640 80 720 120 840 180 1020 180 1200 200 1400 80 1480 100 1580 80 1660 180 1840 80 1920 180 2100 260 2360 180 2540 80 2620 100 2720 80 2800 260 3060 80 3140 200 3340 200 3540 200 3740 260 4000 80 4080 260 4340 180 4520 220 4740 280 5020 200 5220 180 5400 200 5600 240 5840 180 6020 200 6220 200 6420 180 6600 180 6780 100 6880 80 6960 200 7160 200 7360 180 7540 100 7640 300 7940 180 8120 80 8200 100 8300 100 8400 160 8560 240 8800 200 9000 200 9200 180 9380 200 9580 200 9780 160 9940 80 10020 80 10100 160 10260 100 10360 200 10560 200 10760 180 10940 180 11120 160 11280 80 11360 80 11440 180 11620 180 11800 180 11980 180 12160 180 12340 100 12440 120 </l>
+<l>2943 294 367 0 0 0 80 80 80 160 80 240 80 320 180 500 60 560 180 740 100 840 80 920 100 1020 120 1140 180 1320 180 1500 200 1700 80 1780 100 1880 80 1960 180 2140 200 2340 180 2520 260 2780 180 2960 120 3080 100 3180 80 </l>
+<l>3311 294 367 0 0 0 120 </l>
+</end><attrs>-1</attrs> </TextRich>
+
+
+//------- Compos # 11 -------------------------------
+
+
+//------- Compos # 12 -------------------------------
+
+
+//------- Compos # 13 -------------------------------
+
+
+//------- Compos # 14 -------------------------------
+
+
+//------- Compos # 15 -------------------------------
+
+
+//------- Compos # 16 -------------------------------
+
+
+//------- Compos # 17 -------------------------------
+
+
+//------- Compos # 18 -------------------------------
+
+
+//------- Compos # 19 -------------------------------
+
+
+//------- Compos # 20 -------------------------------
+
+
+//------- Compos # 21 -------------------------------
+
+
+//------- Compos # 22 -------------------------------
+
+
+//------- Compos # 23 -------------------------------
+
+
+//------- Compos # 24 -------------------------------
+
+
+//------- Compos # 25 -------------------------------
+
+
+//------- Compos # 26 -------------------------------
+
+
+//------- Compos # 27 -------------------------------
+
+
+//------- Compos # 28 -------------------------------
+
+
+//------- Compos # 29 -------------------------------
+
+
+//------- Compos # 30 -------------------------------
+
+
+//------- Compos # 31 -------------------------------
+
+
+//------- Compos # 32 -------------------------------
+
+
+//------- Compos # 33 -------------------------------
+
+
+//------- Compos # 34 -------------------------------
+
+
+//------- Compos # 35 -------------------------------
+
+
+//------- Compos # 36 -------------------------------
+
+
+//------- Compos # 37 -------------------------------
+
+
+//------- Compos # 38 -------------------------------
+
+
+//------- Compos # 39 -------------------------------
+
+
+//------- Compos # 40 -------------------------------
+
+
+//------- Compos # 41 -------------------------------
+
+
+//------- Compos # 42 -------------------------------
+
+
+//------- Compos # 43 -------------------------------
+
+
+//------- Compos # 44 -------------------------------
+
+
+//------- Compos # 45 -------------------------------
+
+
+//------- Compos # 46 -------------------------------
+
+
+//------- Compos # 47 -------------------------------
+
+
+//------- Compos # 48 -------------------------------
+
+
+//------- Compos # 49 -------------------------------
+
+
+//------- Compos # 50 -------------------------------
+
+
+//------- Compos # 51 -------------------------------
+
+
+//------- Compos # 52 -------------------------------
+
+
+//------- Compos # 53 -------------------------------
+
+
+//------- Compos # 54 -------------------------------
+
+
+//------- Compos # 55 -------------------------------
+
+
+//------- Compos # 56 -------------------------------
+
+
+//------- Compos # 57 -------------------------------
+
+
+//------- Compos # 58 -------------------------------
+
+
+//------- Compos # 59 -------------------------------
+
+
+//------- Compos # 60 -------------------------------
+
+
+//------- Compos # 61 -------------------------------
+
+
+//------- Compos # 62 -------------------------------
+
+
+//------- Compos # 63 -------------------------------
+
+
+//------- Compos # 64 -------------------------------
+
+
+//------- Compos # 65 -------------------------------
+
+
+//------- Compos # 66 -------------------------------
+
+
+//------- Compos # 67 -------------------------------
+
+
+//------- Compos # 68 -------------------------------
+
+
+//------- Compos # 69 -------------------------------
+
+
+//------- Compos # 70 -------------------------------
+
+
+//------- Compos # 71 -------------------------------
+
+
+//------- Compos # 72 -------------------------------
+
+
+//------- Compos # 73 -------------------------------
+
+
+//------- Compos # 74 -------------------------------
+
+
+//------- Compos # 75 -------------------------------
+
+
+//------- Compos # 76 -------------------------------
+
+
+//------- Compos # 77 -------------------------------
+
+
+//------- Compos # 78 -------------------------------
+
+
+//------- Compos # 79 -------------------------------
+
+
+//------- Compos # 80 -------------------------------
+
+
+//------- Compos # 81 -------------------------------
+
+
+//------- Compos # 82 -------------------------------
+
+
+//------- Compos # 83 -------------------------------
+
+
+//------- Compos # 84 -------------------------------
+
+
+//------- Compos # 85 -------------------------------
+
+
+//------- Compos # 86 -------------------------------
+
+
+//------- Compos # 87 -------------------------------
+
+
+//------- Compos # 88 -------------------------------
+
+
+//------- Compos # 89 -------------------------------
+
+
+//------- Compos # 90 -------------------------------
+
+
+//------- Compos # 91 -------------------------------
+
+
+//------- Compos # 92 -------------------------------
+
+
+//------- Compos # 93 -------------------------------
+
+
+//------- Compos # 94 -------------------------------
+
+
+//------- Compos # 95 -------------------------------
+
+
+//------- Compos # 96 -------------------------------
+
+
+//------- Compos # 97 -------------------------------
+
+
+//------- Compos # 98 -------------------------------
+
+
+//------- Compos # 99 -------------------------------
+
+
+//------- Compos # 100 -------------------------------
+
+
+//------- Compos # 101 -------------------------------
+
+
+//------- Compos # 102 -------------------------------
+
+
+//------- Compos # 103 -------------------------------
+
+
+//------- Compos # 104 -------------------------------
+
+
+//------- Compos # 105 -------------------------------
+
+
+//------- Compos # 106 -------------------------------
+
+
+//------- Compos # 107 -------------------------------
+
+
+//------- Compos # 108 -------------------------------
+
+
+//------- Compos # 109 -------------------------------
+
+
+//------- Compos # 110 -------------------------------
+
+
+//------- Compos # 111 -------------------------------
+
+
+//------- Compos # 112 -------------------------------
+
+
+//------- Compos # 113 -------------------------------
+
+
+//------- Compos # 114 -------------------------------
+
+
+//------- Compos # 115 -------------------------------
+
+
+//------- Compos # 116 -------------------------------
+
+
+//------- Compos # 117 -------------------------------
+
+
+//------- Compos # 118 -------------------------------
+
+
+//------- Compos # 119 -------------------------------
+
+
+//------- Compos # 120 -------------------------------
+
+
+//------- Compos # 121 -------------------------------
+
+
+//------- Compos # 122 -------------------------------
+
+
+//------- Compos # 123 -------------------------------
+
+
+//------- Compos # 124 -------------------------------
+
+
+//------- Compos # 125 -------------------------------
+
+
+//------- Compos # 126 -------------------------------
+
+
+//------- Compos # 127 -------------------------------
+
+
+//------- Compos # 128 -------------------------------
+
+
+//------- Compos # 129 -------------------------------
+
+
+//------- Compos # 130 -------------------------------
+
+
+//------- Compos # 131 -------------------------------
+
+
+//------- Compos # 132 -------------------------------
+
+
+//------- Compos # 133 -------------------------------
+
+
+//------- Compos # 134 -------------------------------
+
+
+//------- Compos # 135 -------------------------------
+
+
+//------- Compos # 136 -------------------------------
+
+
+//------- Compos # 137 -------------------------------
+
+
+//------- Compos # 138 -------------------------------
+
+
+//------- Compos # 139 -------------------------------
+
+
+//------- Compos # 140 -------------------------------
+
+
+//------- Compos # 141 -------------------------------
+
+
+//------- Compos # 142 -------------------------------
+
+
+//------- Compos # 143 -------------------------------
+
+
+//------- Compos # 144 -------------------------------
+
+
+//------- Compos # 145 -------------------------------
+
+
+//------- Compos # 146 -------------------------------
+
+
+//------- Compos # 147 -------------------------------
+
+
+//------- Compos # 148 -------------------------------
+
+
+//------- Compos # 149 -------------------------------
+
+
+//------- Compos # 150 -------------------------------
+
+
+//------- Compos # 151 -------------------------------
+
+
+//------- Compos # 152 -------------------------------
+
+
+//------- Compos # 153 -------------------------------
+
+
+//------- Compos # 154 -------------------------------
+
+
+//------- Compos # 155 -------------------------------
+
+
+//------- Compos # 156 -------------------------------
+
+
+//------- Compos # 157 -------------------------------
+
+
+//------- Compos # 158 -------------------------------
+
+
+//------- Compos # 159 -------------------------------
+
+
+//------- Compos # 160 -------------------------------
+
+
+//------- Compos # 161 -------------------------------
+
+
+//------- Compos # 162 -------------------------------
+
+
+//------- Compos # 163 -------------------------------
+
+
+//------- Compos # 164 -------------------------------
+
+
+//------- Compos # 165 -------------------------------
+
+
+//------- Compos # 166 -------------------------------
+
+
+//------- Compos # 167 -------------------------------
+
+
+//------- Compos # 168 -------------------------------
+
+
+//------- Compos # 169 -------------------------------
+
+
+//------- Compos # 170 -------------------------------
+
+
+//------- Compos # 171 -------------------------------
+
+
+//------- Compos # 172 -------------------------------
+
+
+//------- Compos # 173 -------------------------------
+
+
+//------- Compos # 174 -------------------------------
+
+
+//------- Compos # 175 -------------------------------
+
+
+//------- Compos # 176 -------------------------------
+
+
+//------- Compos # 177 -------------------------------
+
+
+//------- Compos # 178 -------------------------------
+
+
+//------- Compos # 179 -------------------------------
+
+
+//------- Compos # 180 -------------------------------
+
+
+//------- Compos # 181 -------------------------------
+
+
+//------- Compos # 182 -------------------------------
+
+
+//------- Compos # 183 -------------------------------
+
+
+//------- Compos # 184 -------------------------------
+
+
+//------- Compos # 185 -------------------------------
+
+
+//------- Compos # 186 -------------------------------
+
+
+//------- Compos # 187 -------------------------------
+
+
+//------- Compos # 188 -------------------------------
+
+
+//------- Compos # 189 -------------------------------
+
+
+//------- Compos # 190 -------------------------------
+
+
+//------- Compos # 191 -------------------------------
+
+
+//------- Compos # 192 -------------------------------
+
+
+//------- Compos # 193 -------------------------------
+
+
+//------- Compos # 194 -------------------------------
+
+
+//------- Compos # 195 -------------------------------
+
+
+//------- Compos # 196 -------------------------------
+
+
+//------- Compos # 197 -------------------------------
+
+
+//------- Compos # 198 -------------------------------
+
+
+//------- Compos # 199 -------------------------------
+
+
+//------- Compos # 200 -------------------------------
+
+
+//------- Compos # 201 -------------------------------
+
+
+//------- Compos # 202 -------------------------------
+
+
+//------- Compos # 203 -------------------------------
+
+
+//------- Compos # 204 -------------------------------
+
+
+//------- Compos # 205 -------------------------------
+
+
+//------- Compos # 206 -------------------------------
+
+
+//------- Compos # 207 -------------------------------
+
+
+//------- Compos # 208 -------------------------------
+
+
+//------- Compos # 209 -------------------------------
+
+
+//------- Compos # 210 -------------------------------
+
+
+//------- Compos # 211 -------------------------------
+
+
+//------- Compos # 212 -------------------------------
+
+
+//------- Compos # 213 -------------------------------
+
+
+//------- Compos # 214 -------------------------------
+
+
+//------- Compos # 215 -------------------------------
+
+
+//------- Compos # 216 -------------------------------
+
+
+//------- Compos # 217 -------------------------------
+
+
+//------- Compos # 218 -------------------------------
+
+
+//------- Compos # 219 -------------------------------
+
+
+//------- Compos # 220 -------------------------------
+
+
+//------- Compos # 221 -------------------------------
+
+
+//------- Compos # 222 -------------------------------
+
+
+//------- Compos # 223 -------------------------------
+
+
+//------- Compos # 224 -------------------------------
+
+
+//------- Compos # 225 -------------------------------
+
+
+//------- Compos # 226 -------------------------------
+
+
+//------- Compos # 227 -------------------------------
+
+
+//------- Compos # 228 -------------------------------
+
+
+//------- Compos # 229 -------------------------------
+
+
+//------- Compos # 230 -------------------------------
+
+
+//------- Compos # 231 -------------------------------
+
+
+//------- Compos # 232 -------------------------------
+
+
+//------- Compos # 233 -------------------------------
+
+
+//------- Compos # 234 -------------------------------
+
+
+//------- Compos # 235 -------------------------------
+
+
+//------- Compos # 236 -------------------------------
+
+
+//------- Compos # 237 -------------------------------
+
+
+//------- Compos # 238 -------------------------------
+
+
+//------- Compos # 239 -------------------------------
+
+
+//------- Compos # 240 -------------------------------
+
+
+//------- Compos # 241 -------------------------------
+
+
+//------- Compos # 242 -------------------------------
+
+
+//------- Compos # 243 -------------------------------
+
+
+//------- Compos # 244 -------------------------------
+
+
+//------- Compos # 245 -------------------------------
+
+
+//------- Compos # 246 -------------------------------
+
+
+//------- Compos # 247 -------------------------------
+
+
+//------- Compos # 248 -------------------------------
+
+
+//------- Compos # 249 -------------------------------
+
+
+//------- Compos # 250 -------------------------------
+
+
+//------- Compos # 251 -------------------------------
+
+
+//------- Compos # 252 -------------------------------
+
+
+//------- Compos # 253 -------------------------------
+
+
+//------- Compos # 254 -------------------------------
+
+
+//------- Compos # 255 -------------------------------
+
+
+//------- Compos # 256 -------------------------------
+
+
+//------- Compos # 257 -------------------------------
+
+
+//------- Compos # 258 -------------------------------
+
+
+//------- Compos # 259 -------------------------------
+
+
+//------- Compos # 260 -------------------------------
+
+
+//------- Compos # 261 -------------------------------
+
+
+//------- Compos # 262 -------------------------------
+
+
+//------- Compos # 263 -------------------------------
+
+
+//------- Compos # 264 -------------------------------
+
+
+//------- Compos # 265 -------------------------------
+
+
+//------- Compos # 266 -------------------------------
+
+
+//------- Compos # 267 -------------------------------
+
+
+//------- Compos # 268 -------------------------------
+
+
+//------- Compos # 269 -------------------------------
+
+
+//------- Compos # 270 -------------------------------
+
+
+//------- Compos # 271 -------------------------------
+
+
+//------- Compos # 272 -------------------------------
+
+
+//------- Compos # 273 -------------------------------
+
+
+//------- Compos # 274 -------------------------------
+
+
+//------- Compos # 275 -------------------------------
+
+
+//------- Compos # 276 -------------------------------
+
+
+//------- Compos # 277 -------------------------------
+
+
+//------- Compos # 278 -------------------------------
+
+
+//------- Compos # 279 -------------------------------
+
+
+//------- Compos # 280 -------------------------------
+
+
+//------- Compos # 281 -------------------------------
+
+
+//------- Compos # 282 -------------------------------
+
+
+//------- Compos # 283 -------------------------------
+
+
+//------- Compos # 284 -------------------------------
+
+
+//------- Compos # 285 -------------------------------
+
+
+//------- Compos # 286 -------------------------------
+
+
+//------- Compos # 287 -------------------------------
+
+
+//------- Compos # 288 -------------------------------
+
+
+//------- Compos # 289 -------------------------------
+
+
+//------- Compos # 290 -------------------------------
+
+
+//------- Compos # 291 -------------------------------
+
+
+//------- Compos # 292 -------------------------------
+
+
+//------- Compos # 293 -------------------------------
+
+
+//------- Compos # 294 -------------------------------
+
+
+//------- Compos # 295 -------------------------------
+
+
+//------- Compos # 296 -------------------------------
+
+
+//------- Compos # 297 -------------------------------
+
+
+//------- Compos # 298 -------------------------------
+
+
+//------- Compos # 299 -------------------------------
+
+
+//------- Compos # 300 -------------------------------
+
+
+//------- Compos # 301 -------------------------------
+<SpriteButton>
+<id>301 12 "sans_nom" 1
+</id>
+<attrs>100 4 10 1  33557506 pages_ pages_  0 1 2 1 0 115 19 -2</attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "adjust" 0
+</id>
+<attrs>1 0 4 4 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 306</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+1 <Ph_Piece><id>-1 15 "btimage" 0
+</id>
+<attrs>1 0 4 10 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 57</PhKey>
+1 <PhKey>1 57</PhKey>
+2 <PhKey>1 57</PhKey>
+3 <PhKey>1 57</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 8</PhKey>
+1 <PhKey>1 8</PhKey>
+2 <PhKey>1 8</PhKey>
+3 <PhKey>1 8</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+2 <Ph_Piece><id>-1 15 "bttxt" 0
+<options>
+_yMouse 1 12
+_xMouse 1 27
+</options>
+</id>
+<attrs>1 0 4 12 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 302</PhKey>
+1 <PhKey>1 303</PhKey>
+2 <PhKey>1 304</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 14</PhKey>
+1 <PhKey>1 14</PhKey>
+2 <PhKey>1 14</PhKey>
+3 <PhKey>1 14</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+1 <PhKey>1 1</PhKey>
+2 <PhKey>1 1</PhKey>
+3 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+3 <Ph_Piece><id>-1 15 "adjust0" 0
+<AttrsEditor>
+"adjust();"
+<Params> 0 </Params>
+</AttrsEditor>
+</id>
+<attrs>1 0 4 6 0 -1 0 0 0 0 0 _flag2 13349 X X "adjust();"X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 305</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 3</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 1 <ActionInfos> 804000 </ActionInfos>   1
+"/*[AS]*/<br>// Construit le mask SWF pour un group &quot;cropp&eacute;&quot; (qui efface ce qui d&eacute;passe)<br>//________________________________________<br>		// R&eacute;cup&egrave;re les donn&eacute;es utiles<br>coords = $piece_of_action_coords$;<br>lg = coords[2];<br>ht = coords[3];<br>grMaster = _this;<br>		// Construit le rectangle du masque<br>_this.createEmptyMovieClip(&quot;gr&quot;, 5);<br>-&gt;gr.beginFill(255, 0);<br>-&gt;gr.moveTo(0, 0);<br>-&gt;gr.lineTo(0, ht);<br>-&gt;gr.lineTo(lg, ht);<br>-&gt;gr.lineTo(lg, 0);<br>-&gt;gr.lineTo(0, 0);<br>-&gt;gr.endFill(0, 0);<br>		// D&eacute;fini le masque<br>_this.setMask(gr);<br>/*[/AS]*/<br>"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+0 <PhKey>1 100</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 4</attrs>
+<table>
+0 <couche> 0 2 0</couche>
+1 <couche> 0 1 1</couche>
+2 <couche> 0 0 2</couche>
+3 <couche> 0 3 3</couche>
+</table>
+</couchtab>
+</tabobj>
+<pages>0 0 13 0 </pages> <face_common><background><PhColorGradient>0 mult 100 48300 16700 48300 14800 1 <PhColorTab><attrs>10 2</attrs>
+<PhColor>
+227 227 250 255
+</PhColor>
+<PhColor>
+182 182 249 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> 0 <corners>0 5 -1 -1 -1</corners> <border>17 2 <PhColorGradient>0 mult 100 0 2000 10000 2000 1 <PhColorTab><attrs>10 2</attrs>
+<PhColor>
+227 227 250 255
+</PhColor>
+<PhColor>
+167 167 212 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> </border> <overflow>0<overflow>-2147483648</background>
+</face_common> </SpriteButton>
+
+
+//------- Compos # 302 -------------------------------
+<txtaff><id>302 2 "sans_nom" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 303 -------------------------------
+<txtaff><id>303 2 "sans_nom" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 304 -------------------------------
+<txtaff><id>304 2 "sans_nom" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 305 -------------------------------
+<fillrect><id>305 4 "sans_nom" 0
+</id>
+<coords>0 0 115 19 non_icon</coords>
+0 0 0 0 1</fillrect>
+
+
+//------- Compos # 306 -------------------------------
+<fillrect><id>306 4 "sans_nom" 0
+</id>
+<coords>0 0 115 19 non_icon</coords>
+6 255 255 255 1</fillrect>
+</table>
+</composants><PhListGroupAccess><txttab><attrs>3 3</attrs>
+"*** ajouter ***"
+"page_index_3;84;pages[0]/pages_[1]/page_1[7];cadre_charger"
+"page_index_3;122;pages[0]/pages_[2]/page_1[7];cadre_presentation"
+</txttab>
+</PhListGroupAccess>
+</eanim>

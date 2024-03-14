@@ -1,0 +1,112 @@
+<!doctype html>
+<!--Pour le modele html5, inscrire 'fontsclass' (remplacez les ' par des $) juste au dessus de </script> -->
+
+<html>
+  <head>
+	<title>HTML timebar</title>
+    <meta charset="utf-8">
+	
+    <style>html, body {width: 100%; height: 100%}
+	*{
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	*{padding:0;margin:0}
+	svg.e_a{display:block}	
+	</style>
+	<!--[edidget_player]-->
+	<script type="text/javascript" src="wv_.js"	></script>
+	<!--[/edidget_player]-->
+	<!--[edidget_classes]-->
+			<script src="WvEmbed.js"></script>
+
+	<!--[/edidget_classes]-->
+	<!--[edidget_custom#wvembed]-->
+	<!--[/edidget_custom#wvembed]-->
+<link rel="stylesheet"  type="text/css" href="wv_wvembed.css">
+
+  </head>
+  <body style="margin: 0; overflow: visible; /*[body_bg]*//*[/body_bg]*/">
+	<center>
+	<!--[edidget#wvembed]-->
+	<div style="width:800px; height:800px;  position:relative ;">
+	<div class="wvcach"  style="width:800px; height:800px;  font-size:20px;"><script>WvTree.onload()</script><p>En chargement</p><p>Si ce cadre reste affiché trop longtemps (5s),<br>Veuillez activer <a href="https://www.pratique.fr/activer-javascript.html">javascript</a></p></div>
+	<div  id='wvembed' style="left:0.0px; top:0.0px; width:800.0px; height:800.0px;  z-index:0; visibility:visible;  position : absolute;  overflow : hidden;  background-color:rgb(230,221,253); overflow:hidden; " >
+		<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
+
+			this.wvBuildRoot(1,16); WvBubblePlayer.refreshMax=1;
+		}; div_.wvDivOpen(); /*open*/</script>
+		<div id='w_embed' style="left:800.0px; top:418.0px;  z-index:0; visibility:visible;  position : absolute;  overflow : visible;   " >
+			<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
+
+				this.wvBuildGroup(1);
+			}; div_.wvDivOpen(); /*open*/</script>
+			<div id='w_didac' style="left:-775.0px; top:-414.0px; width:771.0px; height:525.0px;  z-index:1; visibility:visible;  position : absolute;  overflow : visible;   " >
+				<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
+
+					this.wvBuildFace();
+				}; div_.wvDivOpen(); /*open*/</script>
+			<p style="font-family: Arial; font-size: 16px; color: #0000FF; text-align: left; position: absolute;">
+			page&nbsp;HTML&nbsp;&quot;EMBED&quot;</b><span style=" color: #000000;"><b><br>
+			</b><br>
+			IMPORTANT&nbsp;1&nbsp;:&nbsp;le&nbsp;fichier&nbsp;&quot;WvEmbed.js&quot;&nbsp;doit&nbsp;toujours&nbsp;accompagner&nbsp;cette&nbsp;page-HTML-embed<br>
+			IMPORTANT&nbsp;2&nbsp;:&nbsp;param&eacute;trez&nbsp;&quot;WvEmbed.js&quot;&nbsp;-&nbsp;rechercher&nbsp;</span><span style=" font-size: 12px;"><span style=" color: #000000;">PARAMETER_TODO&nbsp;dans&nbsp;le&nbsp;script.</span></span><span style=" color: #000000;"><br>
+			<br>
+			Il&nbsp;vous&nbsp;suffit&nbsp;d&apos;ajouter&nbsp;les&nbsp;fonctions&nbsp;qui&nbsp;recevront&nbsp;les&nbsp;requ&egrave;tes&nbsp;de&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principale.<br>
+			</span><br>
+			-&nbsp;bleu&nbsp;:&nbsp;&agrave;&nbsp;recopier&nbsp;tel&nbsp;quel<span style=" color: #008000;"><br>
+			-&nbsp;vert&nbsp;:&nbsp;valeur&nbsp;inscrite&nbsp;en&nbsp;param&egrave;tres,&nbsp;dans&nbsp;l&apos;appel&nbsp;de&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principale</span><span style=" color: #CB09CB;"><br>
+			-&nbsp;violet&nbsp;:&nbsp;valeur&nbsp;r&eacute;cup&eacute;r&eacute;&nbsp;dans&nbsp;le&nbsp;script&nbsp;de&nbsp;la&nbsp;page&nbsp;principal</span><span style=" color: #000000;"><br>
+			______________________________________________________________<br>
+			Exemple&nbsp;de&nbsp;fonction&nbsp;synchrone:<br>
+			</span><b><br>
+			WvEmbedEvent.</b><span style=" color: #008000;"><b>fonc1</b></span><span style=" color: #000000;">&nbsp;</span><b>=&nbsp;function(</b><span style=" color: #008000;"><b>messageP</b></span><b>){					</b><span style=" color: #000000;"><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(&quot;Oui&nbsp;je&nbsp;suis&nbsp;l&apos;embed&nbsp;2&nbsp;&quot;+messageP);&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=" color: #6B6B83;">//&nbsp;Placez&nbsp;ici&nbsp;votre&nbsp;script</span><span style=" color: #000000;"><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>return&nbsp;</b><span style=" color: #CB09CB;"><b>&quot;Voil&agrave;&nbsp;le&nbsp;r&eacute;sultat&quot;</b></span><b>;<br>
+			};<br>
+			</b><span style=" color: #000000;">______________________________________________________________<br>
+			Exemple&nbsp;de&nbsp;fonction&nbsp;asynchrone:&nbsp;<br>
+			</span><b><br>
+			WvEmbedEvent.</b><span style=" color: #008000;"><b>fonc1</b></span><span style=" color: #000000;"><b>&nbsp;</b></span><b>=&nbsp;function(</b><span style=" color: #008000;"><b>messageP</b></span><b>,returned){					</b><span style=" color: #000000;"><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(												<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;	(</span><span style=" color: #008000;"><b>messageP</b></span><b>,returned</b><span style=" color: #000000;">){<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(&quot;Oui&nbsp;je&nbsp;suis&nbsp;l&apos;embed&nbsp;1&quot;+messageP);<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=" color: #008000;"><b>returned</b></span><span style=" color: #000000;">(</span><span style=" color: #CB09CB;"><b>&quot;Voil&agrave;&nbsp;le&nbsp;r&eacute;sultat&quot;</b></span><span style=" color: #000000;">);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</span><span style=" color: #4D4D6B;">/&nbsp;Notez&nbsp;que&nbsp;le&nbsp;retour&nbsp;sera&nbsp;envoy&eacute;&nbsp;par&nbsp;:&nbsp;returned(reponse)&nbsp;<br>
+			</span><span style=" color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=" color: #4D4D6B;">//&nbsp;&nbsp;fonction&nbsp;callback</span><span style=" color: #000000;"><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3000,&nbsp;</span><span style=" color: #008000;"><b>messageP</b></span><b>,&nbsp;returned</b><span style=" color: #000000;"><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);						&nbsp;</span><b><br>
+			};</b><span style=" color: #000000;"><br>
+			&nbsp;</span></p>
+			</div>
+			<div id='w_button_simple' 
+				onclick='
+					let script = "WvEmbedEvent.fonc1 = function(messageP){\n"+ " console.log(&apos;Oui je suis l&apos;embed 2 &apos;+messageP); // Placez ici votre script\n"+ " return &apos;Voilà le résultat&apos;;\n"+ "};"; navigator.clipboard.writeText(script);
+				'
+				 style="cursor: pointer;left:-333.0px; top:-223.0px; width:115.0px; height:19.0px;  z-index:2;  text-align:center; visibility:visible;  position : absolute;  overflow : visible;   border-radius:5.0px;box-sizing: border-box; border-width:2.0px; border-top-color:rgb(227,227,250); border-left-color:rgb(227,227,250); border-bottom-color:rgb(167,167,212); border-right-color:rgb(167,167,212); border-style:solid;background:linear-gradient(0deg,rgb(227,227,250),rgb(182,182,249)); overflow:hidden; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 13px; color:#000000; text-align:center; "
+				onmouseover='WvButton_S.mouseButton(this, ["#000000","#000000"],null)'>
+			<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;/*wvtype:html5face 003*/this.wvBuildFace();WvButton_S.initFlat(this);}; div_.wvDivOpen(); /*open*/</script>
+						<p id='line0' style="margin: 1px 0px;">Copier&nbsp;le&nbsp;script</p>
+			</div>
+			<div id='w_button_simple0' 
+				onclick='
+					let script = "WvEmbedEvent.fonc1 = function(messageP,returned){\n"+ " setTimeout(\n"+ " function(messageP,returned){\n"+ " console.log(&apos;Oui je suis l embed 1&apos;+messageP);\n"+ " returned(&apos;Voilà le résultat&apos;); // Notez que le retour sera envoyé par:\n"+ " } // returned( réponse )\n"+ " 3000, messageP, returned\n"+ " );\n"+ "};\n"+ ""; navigator.clipboard.writeText(script);
+				'
+				 style="cursor: pointer;left:-333.0px; top:-97.0px; width:115.0px; height:19.0px;  z-index:3;  text-align:center; visibility:visible;  position : absolute;  overflow : visible;   border-radius:5.0px;box-sizing: border-box; border-width:2.0px; border-top-color:rgb(227,227,250); border-left-color:rgb(227,227,250); border-bottom-color:rgb(167,167,212); border-right-color:rgb(167,167,212); border-style:solid;background:linear-gradient(0deg,rgb(227,227,250),rgb(182,182,249)); overflow:hidden; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 13px; color:#000000; text-align:center; "
+				onmouseover='WvButton_S.mouseButton(this, ["#000000","#000000"],null)'>
+			<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;/*wvtype:html5face 003*/this.wvBuildFace();WvButton_S.initFlat(this);}; div_.wvDivOpen(); /*open*/</script>
+						<p id='line0' style="margin: 1px 0px;">Copier&nbsp;le&nbsp;script</p>
+			</div>
+		</div>
+		<script>/*close*/ var div_= WvTree.getDiv(); div_.wvDivClose=function(){ if(this.wvIsDivClosed!=null) return; this.wvIsDivClosed=true;this.wvBuildTree(true);}; div_.wvDivClose(); /*close*/</script>
+	</div >
+
+	</div>
+	<!--[/edidget#wvembed]-->
+	</center>
+	<div id='infos'></div>
+  </body>
+</html>

@@ -1,0 +1,1117 @@
+<addr>
+librairi="_EAnim.AnimComponent.librairi"
+fillrect="_EAnim.AnimComponent.fillrect"
+Ph_Sprite="_EAnim.AnimComponent.Ph_Sprite"
+tabobj="_EAnim.AnimComponent.tabobj"
+Ph_Piece="_EAnim.AnimComponent.Ph_Piece"
+PhKey="_EAnim.AnimComponent.PhKey"
+actScript="_EAnim.AnimComponent.Action.PhActionScript"
+couchtab="_EAnim.AnimComponent.couchtab"
+couche="_EAnim.AnimComponent.couche"
+PhColorGradient="phUtil.PhComponent.PhColorGradient"
+PhColorTab="phUtil.PhComponent.PhColorTab"
+PhColor="phUtil.PhComponent.PhColor"
+txtaff="_EAnim.AnimComponent.txtaff"
+txtstyle="_EAnim.AnimComponent.txtstyle"
+txttab="_EAnim.AnimComponent.txttab"
+TextRich="_EAnim.AnimComponent.TextRich"
+AttrsEditor="_EAnim.AnimComponent.AttrsEditors.AttrsEditor"
+PhListGroupAccess="_EAnim.FensVolantes.FenWithSpecificComponent.PhListGroupAccess"
+</addr>
+<eanim>
+<program>"E-Anim/html"</program>
+<version>2002045</version>
+<scale>1000</scale>
+<url_js>"! (No url)\ "</url_js>
+<projet><fond>800 800 255 255 255 61</fond>
+<attrs>16 1 7 -1 -1 3 </attrs>
+</projet><composants><newlib><librairi>
+<libattrs>fond_opaque nom_var_not_globales</libattrs>
+<attrs>100 18</attrs>
+</librairi>
+</newlib><table>
+
+//------- Compos # 0 -------------------------------
+<fillrect><id>0 4 "vide" 1
+</id>
+<coords>0 0 0 0 non_icon</coords>
+-1 0 0 0 1</fillrect>
+
+
+//------- Compos # 1 -------------------------------
+<Ph_Sprite>
+<id>1 11 "ecrandebase" 1
+</id>
+<attrs>100 1 10 1  1024 </attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "w_embed" 0
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 800</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 418</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
+"import(WvEmbed);"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 1</attrs>
+<table>
+0 <couche> 0 0 0</couche>
+</table>
+</couchtab>
+</tabobj>
+<face_common><background><PhColorGradient>0 mult 100 0 80000 0 0 1 <PhColorTab><attrs>10 1</attrs>
+<PhColor>
+230 221 253 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> 0 <overflow>0<overflow>-2147483648</background>
+<css>"""""""""""                      /*refresh*/WvBubblePlayer.refreshMax=1;/*refresh*/"""""
+</css>
+</face_common> </Ph_Sprite>
+
+
+//------- Compos # 2 -------------------------------
+<Ph_Sprite>
+<id>2 11 "sans_nom" 1
+</id>
+<attrs>100 4 10 1  1024 </attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "label" 0
+<options>
+_yMouse 1 7
+_xMouse 1 40
+</options>
+</id>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020098 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 3</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 -575</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 -413</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+1 <Ph_Piece><id>-1 15 "w_didac" 0
+<options>
+_yMouse 1 191
+_xMouse 1 17
+</options>
+</id>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 4</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 -775</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 -414</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+2 <Ph_Piece><id>-1 15 "w_button_simple" 0
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 6</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 -333</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 -223</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
+"let script = <br>&quot;WvEmbedEvent.fonc1 = function(messageP){\\n&quot;+					<br>&quot;	        console.log(&apos;Oui je suis l&apos;embed 2 &apos;+messageP);    // Placez ici votre script\\n&quot;+<br>&quot;	        return &apos;Voil&agrave; le r&eacute;sultat&apos;;\\n&quot;+<br>&quot;};&quot;;<br><br>navigator.clipboard.writeText(script);"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+3 <Ph_Piece><id>-1 15 "w_button_simple0" 0
+</id>
+<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 12</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 -333</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 -97</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 3</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
+"let script = <br>&quot;WvEmbedEvent.fonc1 = function(messageP,returned){\\n&quot;+				<br>&quot;    setTimeout(\\n&quot;+								<br>&quot;        function(messageP,returned){\\n&quot;+<br>&quot;            console.log(&apos;Oui je suis l embed 1&apos;+messageP);\\n&quot;+<br>&quot;            returned(&apos;Voil&agrave; le r&eacute;sultat&apos;);     // Notez que le retour sera envoy&eacute; par:\\n&quot;+<br>&quot;        }                                      // returned( r&eacute;ponse )\\n&quot;+<br>&quot;        3000, messageP, returned\\n&quot;+<br>&quot;    );\\n&quot;+<br>&quot;};\\n&quot;+<br>&quot;&quot;;<br><br><br>navigator.clipboard.writeText(script);"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 5</attrs>
+<table>
+0 <couche> 0 3 0</couche>
+1 <couche> 0 2 1</couche>
+2 <couche> 0 1 2</couche>
+3 <couche> 0 0 3</couche>
+4 <null></null>
+</table>
+</couchtab>
+</tabobj>
+</Ph_Sprite>
+
+
+//------- Compos # 3 -------------------------------
+<txtaff><id>3 2 "sans_nom" 0
+</id>
+<coords>0 0 70 22 non_icon</coords>
+<txtstyle>"sans_nom898232" "Impact" 14 0 0 0 136 136 165 "Impact"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"@EMBED@"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 4 -------------------------------
+<TextRich><id>4 24 "textrich" 0
+</id>
+<coords>0 0 771 525 non_icon</coords>
+<text><linespace=0><alignement=0><font=Arial><style=2><size=16><color=0000FF><u=0><color_u=000000><br>
+<void>page&nbsp;HTML&nbsp;&quot;EMBED&quot;<color=000000><br>
+<void><style=0><br>
+<void>IMPORTANT&nbsp;1&nbsp;:&nbsp;le&nbsp;fichier&nbsp;&quot;WvEmbed.js&quot;&nbsp;doit&nbsp;toujours&nbsp;accompagner&nbsp;cette&nbsp;page-HTML-embed<br>
+<void>IMPORTANT&nbsp;2&nbsp;:&nbsp;param&eacute;trez&nbsp;&quot;WvEmbed.js&quot;&nbsp;-&nbsp;rechercher&nbsp;<size=12>PARAMETER_TODO&nbsp;dans&nbsp;le&nbsp;script.<size=16><br>
+<void><br>
+<void>Il&nbsp;vous&nbsp;suffit&nbsp;d&apos;ajouter&nbsp;les&nbsp;fonctions&nbsp;qui&nbsp;recevront&nbsp;les&nbsp;requ&egrave;tes&nbsp;de&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principale.<br>
+<void><color=0000FF><br>
+<void>-&nbsp;bleu&nbsp;:&nbsp;&agrave;&nbsp;recopier&nbsp;tel&nbsp;quel<color=008000><br>
+<void>-&nbsp;vert&nbsp;:&nbsp;valeur&nbsp;inscrite&nbsp;en&nbsp;param&egrave;tres,&nbsp;dans&nbsp;l&apos;appel&nbsp;de&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principale<color=CB09CB><br>
+<void>-&nbsp;violet&nbsp;:&nbsp;valeur&nbsp;r&eacute;cup&eacute;r&eacute;&nbsp;dans&nbsp;le&nbsp;script&nbsp;de&nbsp;la&nbsp;page&nbsp;principal<color=000000><br>
+<void>______________________________________________________________<br>
+<void>Exemple&nbsp;de&nbsp;fonction&nbsp;synchrone:<br>
+<void><style=2><color=0000FF><br>
+<void>WvEmbedEvent.<color=008000>fonc1<style=0><color=000000>&nbsp;<style=2><color=0000FF>=&nbsp;function(<color=008000>messageP<color=0000FF>){					<style=0><color=000000><br>
+<void>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(&quot;Oui&nbsp;je&nbsp;suis&nbsp;l&apos;embed&nbsp;2&nbsp;&quot;+messageP);&nbsp;&nbsp;&nbsp;&nbsp;<color=6B6B83>//&nbsp;Placez&nbsp;ici&nbsp;votre&nbsp;script<color=000000><br>
+<void>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<style=2><color=0000FF>return&nbsp;<color=CB09CB>&quot;Voil&agrave;&nbsp;le&nbsp;r&eacute;sultat&quot;<color=0000FF>;<br>
+<void>};<br>
+<void><style=0><color=000000>______________________________________________________________<br>
+<void>Exemple&nbsp;de&nbsp;fonction&nbsp;asynchrone:&nbsp;<br>
+<void><style=2><color=0000FF><br>
+<void>WvEmbedEvent.<color=008000>fonc1<color=000000>&nbsp;<color=0000FF>=&nbsp;function(<color=008000>messageP<color=0000FF>,returned){					<style=0><color=000000><br>
+<void>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(												<br>
+<void>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;	(<style=2><color=008000>messageP<color=0000FF>,returned<style=0><color=000000>){<br>
+<void>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(&quot;Oui&nbsp;je&nbsp;suis&nbsp;l&apos;embed&nbsp;1&quot;+messageP);<br>
+<void>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<style=2><color=008000>returned<style=0><color=000000>(<style=2><color=CB09CB>&quot;Voil&agrave;&nbsp;le&nbsp;r&eacute;sultat&quot;<style=0><color=000000>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<color=4D4D6B>/&nbsp;Notez&nbsp;que&nbsp;le&nbsp;retour&nbsp;sera&nbsp;envoy&eacute;&nbsp;par&nbsp;:&nbsp;returned(reponse)&nbsp;<br>
+<void><color=000000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<color=4D4D6B>//&nbsp;&nbsp;fonction&nbsp;callback<color=000000><br>
+<void>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3000,&nbsp;<style=2><color=008000>messageP<color=0000FF>,&nbsp;returned<style=0><color=000000><br>
+<void>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);						&nbsp;<style=2><color=0000FF><br>
+<void>};<style=0><color=000000><br>
+<void>&nbsp;<end></text>
+<end>20 <l>0 294 367 0 0 0 200 200 180 380 200 580 180 760 80 840 240 1080 200 1280 260 1540 200 1740 80 1820 160 1980 220 2200 260 2460 240 2700 220 2920 240 3160 160 </l>
+<l>367 0 367 0 0 </l>
+<l>735 294 367 0 0 0 60 60 260 320 220 540 240 780 220 1000 180 1180 220 1400 220 1620 180 1800 80 1880 180 2060 80 2140 80 2220 80 2300 60 2360 180 2540 80 2620 80 2700 80 2780 160 2940 160 3100 80 3180 180 3360 100 3460 80 3540 120 3660 300 3960 140 4100 220 4320 260 4580 180 4760 180 4940 180 5120 80 5200 60 5260 160 5420 120 5540 80 5620 180 5800 180 5980 80 6060 80 6140 80 6220 80 6300 180 6480 160 6640 60 6700 180 6880 160 7040 100 7140 160 7300 80 7380 180 7560 160 7720 160 7880 180 8060 260 8320 180 8500 180 8680 180 8860 160 9020 180 9200 100 9300 80 9380 160 9540 180 9720 80 9800 80 9880 180 10060 80 10140 180 10320 180 10500 180 10680 180 10860 100 10960 220 11180 180 11360 260 11620 180 11800 100 11900 180 12080 260 12340 180 12520 180 12700 180 </l>
+<l>1103 294 367 0 0 0 60 60 260 320 220 540 240 780 220 1000 180 1180 220 1400 220 1620 180 1800 80 1880 180 2060 80 2140 80 2220 80 2300 180 2480 180 2660 100 2760 180 2940 260 3200 180 3380 80 3460 100 3560 180 3740 140 3880 80 3960 120 4080 300 4380 140 4520 220 4740 260 5000 180 5180 180 5360 180 5540 80 5620 60 5680 160 5840 120 5960 80 6040 100 6140 80 6220 100 6320 180 6500 160 6660 160 6820 180 7000 100 7100 160 7260 160 7420 180 7600 100 7700 80 7780 160 7940 140 8080 180 8260 140 8400 180 8580 160 8740 140 8880 160 9040 180 9220 140 9360 140 9500 180 9680 180 9860 180 10040 60 10100 140 10240 140 10380 140 10520 140 10660 60 10720 60 10780 140 10920 60 10980 140 11120 120 11240 80 11320 60 11380 140 11520 60 11580 60 </l>
+<l>1471 0 367 0 0 </l>
+<l>1839 294 367 0 0 0 60 60 60 120 80 200 140 340 180 520 160 680 160 840 80 920 160 1080 160 1240 80 1320 80 1400 80 1480 80 1560 80 1640 180 1820 60 1880 180 2060 60 2120 180 2300 160 2460 80 2540 180 2720 100 2820 80 2900 60 2960 180 3140 160 3300 80 3380 80 3460 180 3640 160 3800 160 3960 80 4040 80 4120 180 4300 160 4460 160 4620 80 4700 180 4880 160 5040 80 5120 80 5200 100 5300 180 5480 160 5640 180 5820 140 5960 100 6060 180 6240 160 6400 80 6480 80 6560 60 6620 180 6800 160 6960 80 7040 100 7140 180 7320 180 7500 160 7660 180 7840 80 7920 180 8100 160 8260 80 8340 180 8520 180 8700 80 8780 60 8840 180 9020 80 9100 180 9280 180 9460 180 9640 180 9820 80 9900 220 10120 180 10300 260 10560 180 10740 80 10820 180 11000 100 11100 80 11180 160 11340 160 11500 80 11580 180 11760 180 11940 60 12000 180 12180 80 </l>
+<l>2207 0 367 0 0 </l>
+<l>2575 294 367 0 0 0 100 100 80 180 180 360 60 420 180 600 160 760 80 840 80 920 80 1000 180 1180 80 1260 100 1360 180 1540 160 1700 180 1880 180 2060 80 2140 180 2320 100 2420 80 2500 80 2580 180 2760 60 2820 80 2900 180 3080 160 3240 180 3420 60 </l>
+<l>2943 294 367 0 0 0 100 100 80 180 140 320 180 500 100 600 80 680 80 760 80 840 80 920 140 1060 180 1240 60 1300 180 1480 160 1640 100 1740 80 1820 80 1900 160 2060 160 2220 160 2380 100 2480 80 2560 80 2640 180 2820 80 2900 180 3080 160 3240 80 3320 180 3500 180 3680 100 3780 180 3960 260 4220 180 4400 80 4480 100 4580 180 4760 160 4920 80 5000 80 5080 180 5260 180 5440 160 5600 160 5760 80 5840 60 5900 60 5960 180 6140 180 6320 180 6500 180 6680 60 6740 80 6820 180 7000 180 7180 80 7260 60 7320 180 7500 80 7580 180 7760 180 7940 180 8120 180 8300 80 8380 220 8600 180 8780 260 9040 180 9220 80 9300 180 9480 100 9580 80 9660 160 9820 160 9980 80 10060 180 10240 180 10420 60 10480 180 </l>
+<l>3311 294 367 0 0 0 100 100 80 180 140 320 80 400 180 580 60 640 180 820 80 900 80 980 80 1060 80 1140 140 1280 180 1460 60 1520 180 1700 160 1860 100 1960 80 2040 100 2140 180 2320 160 2480 160 2640 180 2820 180 3000 100 3100 180 3280 80 3360 180 3540 180 3720 160 3880 160 4040 80 4120 60 4180 180 4360 80 4440 160 4600 160 4760 100 4860 80 4940 180 5120 80 5200 80 5280 180 5460 180 5640 80 5720 60 5780 180 5960 80 6040 180 6220 180 6400 180 6580 180 6760 80 6840 180 7020 100 7120 80 7200 160 7360 160 7520 80 7600 180 7780 180 7960 60 </l>
+<l>3679 294 367 0 0 0 180 180 180 360 180 540 180 720 180 900 180 1080 180 1260 180 1440 180 1620 180 1800 180 1980 180 2160 180 2340 180 2520 180 2700 180 2880 180 3060 180 3240 180 3420 180 3600 180 3780 180 3960 180 4140 180 4320 180 4500 180 4680 180 4860 180 5040 180 5220 180 5400 180 5580 180 5760 180 5940 180 6120 180 6300 180 6480 180 6660 180 6840 180 7020 180 7200 180 7380 180 7560 180 7740 180 7920 180 8100 180 8280 180 8460 180 8640 180 8820 180 9000 180 9180 180 9360 180 9540 180 9720 180 9900 180 10080 180 10260 180 10440 180 10620 180 10800 180 10980 180 </l>
+<l>4047 294 367 0 0 0 220 220 140 360 180 540 260 800 180 980 60 1040 180 1220 80 1300 180 1480 180 1660 80 1740 80 1820 180 2000 160 2160 160 2320 80 2400 80 2480 180 2660 160 2820 80 2900 160 3060 140 3200 160 3360 160 3520 160 3680 100 3780 180 3960 160 4120 180 4300 80 </l>
+<l>4415 0 367 0 0 </l>
+<l>4783 294 367 0 0 0 300 300 180 480 220 700 280 980 200 1180 180 1360 200 1560 220 1780 180 1960 180 2140 200 2340 100 2440 80 2520 100 2620 200 2820 200 3020 180 3200 180 3380 80 3460 180 3640 80 3720 100 3820 200 4020 200 4220 180 4400 100 4500 80 4580 200 4780 200 4980 100 5080 280 5360 180 5540 180 5720 180 5900 180 6080 200 6280 180 6460 220 6680 100 6780 120 6900 0 6900 0 6900 0 6900 0 6900 0 </l>
+<l>5151 294 367 0 0 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 160 800 180 980 160 1140 160 1300 180 1480 60 1540 180 1720 80 1800 60 1860 180 2040 180 2220 100 2320 120 2440 240 2680 160 2840 80 2920 80 3000 60 3060 180 3240 80 3320 160 3480 160 3640 80 3720 160 3880 80 3960 60 4020 60 4080 180 4260 260 4520 180 4700 180 4880 180 5060 80 5140 180 5320 80 5400 120 5520 180 5700 260 5960 180 6140 160 6300 160 6460 180 6640 180 6820 180 7000 220 7220 100 7320 80 7400 80 7480 80 7560 80 7640 80 7720 80 7800 80 7880 80 7960 220 8180 60 8240 180 8420 160 8580 180 8760 140 8900 80 8980 80 9060 160 9220 80 9300 80 9380 140 9520 180 9700 80 9780 100 9880 180 10060 80 10140 160 10300 160 10460 100 10560 80 10640 180 10820 80 </l>
+<l>5519 294 367 0 0 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 120 760 180 940 100 1040 200 1240 120 1360 200 1560 80 1640 160 1800 220 2020 200 2220 80 2300 80 2380 180 2560 80 2640 80 2720 180 2900 80 2980 120 3100 180 3280 180 3460 200 3660 80 3740 100 3840 180 4020 100 4120 160 4280 120 </l>
+<l>5887 294 367 0 0 0 120 120 120 </l>
+<l>6255 294 367 0 0 0 180 180 180 360 180 540 180 720 180 900 180 1080 180 1260 180 1440 180 1620 180 1800 180 1980 180 2160 180 2340 180 2520 180 2700 180 2880 180 3060 180 3240 180 3420 180 3600 180 3780 180 3960 180 4140 180 4320 180 4500 180 4680 180 4860 180 5040 180 5220 180 5400 180 5580 180 5760 180 5940 180 6120 180 6300 180 6480 180 6660 180 6840 180 7020 180 7200 180 7380 180 7560 180 7740 180 7920 180 8100 180 8280 180 8460 180 8640 180 8820 180 9000 180 9180 180 9360 180 9540 180 9720 180 9900 180 10080 180 10260 180 10440 180 10620 180 10800 180 10980 180 </l>
+<l>6623 294 367 0 0 0 220 220 140 360 180 540 260 800 180 980 60 1040 180 1220 80 1300 180 1480 180 1660 80 1740 80 1820 180 2000 160 2160 160 2320 80 2400 80 2480 180 2660 160 2820 80 2900 180 3080 160 3240 140 3380 160 3540 160 3700 160 3860 100 3960 180 4140 160 4300 180 4480 80 4560 80 </l>
+<l>6991 0 367 0 0 </l>
+<l>7359 294 367 0 0 0 300 300 180 480 220 700 280 980 200 1180 180 1360 200 1560 220 1780 180 1960 180 2140 200 2340 100 2440 80 2520 100 2620 200 2820 200 3020 180 3200 180 3380 80 3460 180 3640 80 3720 100 3820 200 4020 200 4220 180 4400 100 4500 80 4580 200 4780 200 4980 100 5080 280 5360 180 5540 180 5720 180 5900 180 6080 200 6280 180 6460 220 6680 80 6760 120 6880 180 7060 100 7160 200 7360 120 7480 200 7680 180 7860 200 8060 100 8160 120 8280 0 8280 0 8280 0 8280 0 8280 0 </l>
+<l>7727 294 367 0 0 0 0 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 160 800 180 980 80 1060 180 1240 80 1320 260 1580 180 1760 180 1940 160 2100 80 2180 100 2280 0 2280 0 2280 0 2280 0 2280 0 2280 0 2280 0 2280 0 2280 0 2280 0 2280 0 2280 0 </l>
+<l>8095 294 367 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 80 720 80 800 80 880 80 960 80 1040 80 1120 80 1200 80 1280 80 1360 80 1440 160 1600 160 1760 160 1920 80 2000 80 2080 180 2260 160 2420 80 2500 0 2500 100 2600 280 2880 180 3060 180 3240 180 3420 180 3600 200 3800 180 3980 220 4200 80 4280 120 4400 180 4580 100 4680 200 4880 120 5000 200 5200 180 5380 200 5580 100 5680 100 </l>
+<l>8463 294 367 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 80 720 80 800 80 880 80 960 80 1040 80 1120 80 1200 80 1280 80 1360 80 1440 80 1520 80 1600 80 1680 80 1760 80 1840 80 1920 160 2080 180 2260 160 2420 160 2580 180 2760 60 2820 180 3000 80 3080 60 3140 180 3320 180 3500 100 3600 120 3720 240 3960 160 4120 80 4200 80 4280 60 4340 180 4520 80 4600 160 4760 160 4920 80 5000 160 5160 80 5240 60 5300 60 5360 180 5540 260 5800 180 5980 180 6160 180 6340 80 6420 180 6600 120 6720 180 6900 260 7160 180 7340 160 7500 160 7660 180 7840 180 8020 180 8200 220 8420 100 8520 80 </l>
+<l>8831 294 367 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 80 720 80 800 80 880 80 960 80 1040 80 1120 80 1200 80 1280 80 1360 80 1440 80 1520 80 1600 80 1680 80 1760 80 1840 80 1920 120 2040 180 2220 100 2320 200 2520 120 2640 200 2840 180 3020 200 3220 100 3320 160 3480 220 3700 200 3900 80 3980 80 4060 180 4240 80 4320 80 4400 180 4580 80 4660 120 4780 180 4960 180 5140 200 5340 80 5420 100 5520 180 5700 100 5800 160 5960 100 6060 80 6140 80 6220 80 6300 80 6380 80 6460 80 6540 80 6620 80 6700 80 6780 220 7000 180 7180 80 7260 180 7440 140 7580 80 7660 180 7840 160 8000 180 8180 80 8260 60 8320 180 8500 80 8580 100 8680 180 8860 80 8940 180 9120 160 9280 100 9380 80 9460 160 9620 180 9800 100 9900 180 10080 80 10160 180 10340 160 10500 140 10640 180 10820 140 10960 180 11140 80 11220 180 11400 180 11580 100 11680 80 11760 80 11840 80 11920 100 12020 180 12200 80 12280 160 12440 100 12540 160 12700 180 12880 180 13060 100 13160 100 13260 180 13440 180 13620 180 13800 160 13960 160 14120 180 14300 100 14400 80 </l>
+<l>9199 294 367 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 80 720 80 800 80 880 80 960 80 1040 80 1120 80 1200 80 1280 100 1380 80 1460 80 1540 80 1620 80 1700 80 1780 80 1860 80 1940 80 2020 80 2100 80 2180 80 2260 80 2340 80 2420 80 2500 80 2580 80 2660 80 2740 80 2820 80 2900 80 2980 80 3060 80 3140 80 3220 80 3300 80 3380 80 3460 80 3540 80 3620 80 3700 80 3780 80 3860 80 3940 80 4020 80 4100 80 4180 80 4260 80 4340 80 4420 80 4500 80 4580 80 4660 80 4740 80 4820 80 4900 80 4980 80 5060 80 5140 80 5220 80 5300 80 5380 80 5460 80 5540 80 5620 80 5700 80 5780 80 5860 80 5940 80 6020 80 6100 80 6180 80 6260 80 6340 80 6420 80 6500 80 6580 180 6760 160 6920 160 7080 80 7160 80 7240 180 7420 160 7580 80 7660 160 7820 180 8000 60 8060 60 8120 180 8300 180 8480 160 8640 160 </l>
+<l>9567 294 367 0 0 0 0 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 80 720 80 800 80 880 80 960 80 1040 80 1120 80 1200 80 1280 80 1360 180 1540 180 1720 180 1900 180 2080 80 2160 80 2240 280 2520 180 2700 180 2880 180 3060 180 3240 200 3440 180 3620 220 3840 80 3920 80 4000 120 4120 180 4300 100 4400 200 4600 120 4720 200 4920 180 5100 200 </l>
+<l>9935 294 367 0 0 0 80 80 80 160 80 240 80 320 80 400 80 480 80 560 80 640 80 720 100 820 80 900 0 900 0 900 0 900 0 900 0 900 0 900 80 </l>
+<l>10303 294 367 0 0 0 120 120 120 </l>
+<l>10671 294 367 0 0 0 80 </l>
+</end><attrs>-1</attrs> </TextRich>
+
+
+//------- Compos # 5 -------------------------------
+
+
+//------- Compos # 6 -------------------------------
+<SpriteButton>
+<id>6 12 "bt_anim_60" 1
+</id>
+<attrs>100 4 10 1  33557506 pages_ pages_  0 1 2 1 0 115 19 -2</attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "adjust" 0
+</id>
+<attrs>1 0 4 4 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 11</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+1 <Ph_Piece><id>-1 15 "btimage" 0
+</id>
+<attrs>1 0 4 10 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 57</PhKey>
+1 <PhKey>1 57</PhKey>
+2 <PhKey>1 57</PhKey>
+3 <PhKey>1 57</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 8</PhKey>
+1 <PhKey>1 8</PhKey>
+2 <PhKey>1 8</PhKey>
+3 <PhKey>1 8</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+2 <Ph_Piece><id>-1 15 "bttxt" 0
+<options>
+_yMouse 1 10
+_xMouse 1 47
+</options>
+</id>
+<attrs>1 0 4 12 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 7</PhKey>
+1 <PhKey>1 8</PhKey>
+2 <PhKey>1 9</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 14</PhKey>
+1 <PhKey>1 14</PhKey>
+2 <PhKey>1 14</PhKey>
+3 <PhKey>1 14</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+1 <PhKey>1 1</PhKey>
+2 <PhKey>1 1</PhKey>
+3 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+3 <Ph_Piece><id>-1 15 "adjust0" 0
+<AttrsEditor>
+"adjust();"
+<Params> 0 </Params>
+</AttrsEditor>
+</id>
+<attrs>1 0 4 6 0 -1 0 0 0 0 0 _flag2 13349 X X "adjust();"X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 10</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 3</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 1 <ActionInfos> 804000 </ActionInfos>   1
+"/*[AS]*/<br>// Construit le mask SWF pour un group &quot;cropp&eacute;&quot; (qui efface ce qui d&eacute;passe)<br>//________________________________________<br>		// R&eacute;cup&egrave;re les donn&eacute;es utiles<br>coords = $piece_of_action_coords$;<br>lg = coords[2];<br>ht = coords[3];<br>grMaster = _this;<br>		// Construit le rectangle du masque<br>_this.createEmptyMovieClip(&quot;gr&quot;, 5);<br>-&gt;gr.beginFill(255, 0);<br>-&gt;gr.moveTo(0, 0);<br>-&gt;gr.lineTo(0, ht);<br>-&gt;gr.lineTo(lg, ht);<br>-&gt;gr.lineTo(lg, 0);<br>-&gt;gr.lineTo(0, 0);<br>-&gt;gr.endFill(0, 0);<br>		// D&eacute;fini le masque<br>_this.setMask(gr);<br>/*[/AS]*/<br>"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+0 <PhKey>1 100</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 4</attrs>
+<table>
+0 <couche> 0 2 0</couche>
+1 <couche> 0 1 1</couche>
+2 <couche> 0 0 2</couche>
+3 <couche> 0 3 3</couche>
+</table>
+</couchtab>
+</tabobj>
+<pages>0 0 13 0 </pages> <face_common><background><PhColorGradient>0 mult 100 46700 21400 46700 19500 1 <PhColorTab><attrs>10 2</attrs>
+<PhColor>
+227 227 250 255
+</PhColor>
+<PhColor>
+182 182 249 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> 0 <corners>0 5 -1 -1 -1</corners> <border>17 2 <PhColorGradient>0 mult 100 0 2000 10000 2000 1 <PhColorTab><attrs>10 2</attrs>
+<PhColor>
+227 227 250 255
+</PhColor>
+<PhColor>
+167 167 212 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> </border> <overflow>0<overflow>-2147483648</background>
+</face_common> </SpriteButton>
+
+
+//------- Compos # 7 -------------------------------
+<txtaff><id>7 2 "txt" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 8 -------------------------------
+<txtaff><id>8 2 "txt" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 9 -------------------------------
+<txtaff><id>9 2 "txt" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 10 -------------------------------
+<fillrect><id>10 4 "adjust" 0
+</id>
+<coords>0 0 115 19 non_icon</coords>
+0 0 0 0 1</fillrect>
+
+
+//------- Compos # 11 -------------------------------
+<fillrect><id>11 4 "forme_sans_nom" 0
+</id>
+<coords>0 0 115 19 non_icon</coords>
+6 255 255 255 1</fillrect>
+
+
+//------- Compos # 12 -------------------------------
+<SpriteButton>
+<id>12 12 "bt_anim_60" 1
+</id>
+<attrs>100 4 10 1  33557506 pages_ pages_  0 1 2 1 0 115 19 -2</attrs>
+<tabobj><table>
+0 <Ph_Piece><id>-1 15 "adjust" 0
+<options>
+_yMouse 1 18
+_xMouse 1 37
+</options>
+</id>
+<attrs>1 0 4 4 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 17</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+1 <Ph_Piece><id>-1 15 "btimage" 0
+</id>
+<attrs>1 0 4 10 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 57</PhKey>
+1 <PhKey>1 57</PhKey>
+2 <PhKey>1 57</PhKey>
+3 <PhKey>1 57</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 8</PhKey>
+1 <PhKey>1 8</PhKey>
+2 <PhKey>1 8</PhKey>
+3 <PhKey>1 8</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+2 <Ph_Piece><id>-1 15 "bttxt" 0
+<options>
+_yMouse 1 5
+_xMouse 1 32
+</options>
+</id>
+<attrs>1 0 4 12 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 13</PhKey>
+1 <PhKey>1 14</PhKey>
+2 <PhKey>1 15</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 14</PhKey>
+1 <PhKey>1 14</PhKey>
+2 <PhKey>1 14</PhKey>
+3 <PhKey>1 14</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 1</PhKey>
+1 <PhKey>1 1</PhKey>
+2 <PhKey>1 1</PhKey>
+3 <PhKey>1 1</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 2</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+
+3 <Ph_Piece><id>-1 15 "adjust0" 0
+<AttrsEditor>
+"adjust();"
+<Params> 0 </Params>
+</AttrsEditor>
+</id>
+<attrs>1 0 4 6 0 -1 0 0 0 0 0 _flag2 13349 X X "adjust();"X 0 0 0 0 0 </attrs>
+<table>
+<piste><attrs> 0 0</attrs>
+<table>
+0 <PhKey>1 16</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 1</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 2</attrs>
+<table>
+0 <PhKey>1 0</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 3</attrs>
+<table>
+0 <PhKey>1 3</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 4</attrs>
+<table>
+0 <actScript>20 1 <ActionInfos> 804000 </ActionInfos>   1
+"/*[AS]*/<br>// Construit le mask SWF pour un group &quot;cropp&eacute;&quot; (qui efface ce qui d&eacute;passe)<br>//________________________________________<br>		// R&eacute;cup&egrave;re les donn&eacute;es utiles<br>coords = $piece_of_action_coords$;<br>lg = coords[2];<br>ht = coords[3];<br>grMaster = _this;<br>		// Construit le rectangle du masque<br>_this.createEmptyMovieClip(&quot;gr&quot;, 5);<br>-&gt;gr.beginFill(255, 0);<br>-&gt;gr.moveTo(0, 0);<br>-&gt;gr.lineTo(0, ht);<br>-&gt;gr.lineTo(lg, ht);<br>-&gt;gr.lineTo(lg, 0);<br>-&gt;gr.lineTo(0, 0);<br>-&gt;gr.endFill(0, 0);<br>		// D&eacute;fini le masque<br>_this.setMask(gr);<br>/*[/AS]*/<br>"
+</actScript>
+</table>
+</piste>
+<piste><attrs> 0 5</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 6</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 7</attrs>
+<table>
+0 <PhKey>1 100</PhKey>
+</table>
+</piste>
+<piste><attrs> 0 8</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 9</attrs>
+<table>
+</table>
+</piste>
+<piste><attrs> 0 10</attrs>
+<table>
+</table>
+</piste>
+</table>
+</Ph_Piece>
+</table>
+<couchtab><attrs>10 4</attrs>
+<table>
+0 <couche> 0 2 0</couche>
+1 <couche> 0 1 1</couche>
+2 <couche> 0 0 2</couche>
+3 <couche> 0 3 3</couche>
+</table>
+</couchtab>
+</tabobj>
+<pages>0 0 13 0 </pages> <face_common><background><PhColorGradient>0 mult 100 46700 34000 46700 32100 1 <PhColorTab><attrs>10 2</attrs>
+<PhColor>
+227 227 250 255
+</PhColor>
+<PhColor>
+182 182 249 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> 0 <corners>0 5 -1 -1 -1</corners> <border>17 2 <PhColorGradient>0 mult 100 0 2000 10000 2000 1 <PhColorTab><attrs>10 2</attrs>
+<PhColor>
+227 227 250 255
+</PhColor>
+<PhColor>
+167 167 212 255
+</PhColor>
+</PhColorTab> -1</PhColorGradient> </border> <overflow>0<overflow>-2147483648</background>
+</face_common> </SpriteButton>
+
+
+//------- Compos # 13 -------------------------------
+<txtaff><id>13 2 "txt" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 14 -------------------------------
+<txtaff><id>14 2 "txt" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 15 -------------------------------
+<txtaff><id>15 2 "txt" 0
+</id>
+<coords>0 0 87 15 non_icon</coords>
+<txtstyle>"sans_nom61" "Arial" 10 0 3 0 0 0 0 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"Copier le script"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
+
+
+//------- Compos # 16 -------------------------------
+<fillrect><id>16 4 "adjust" 0
+</id>
+<coords>0 0 115 19 non_icon</coords>
+0 0 0 0 1</fillrect>
+
+
+//------- Compos # 17 -------------------------------
+<fillrect><id>17 4 "forme_sans_nom" 0
+</id>
+<coords>0 0 115 19 non_icon</coords>
+6 255 255 255 1</fillrect>
+</table>
+</composants><PhListGroupAccess><txttab><attrs>3 3</attrs>
+"*** ajouter ***"
+"page_index_3;84;pages[0]/pages_[1]/page_1[7];cadre_charger"
+"page_index_3;122;pages[0]/pages_[2]/page_1[7];cadre_presentation"
+</txttab>
+</PhListGroupAccess>
+</eanim>

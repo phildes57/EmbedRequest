@@ -1,0 +1,187 @@
+
+*********************************************************
+* Messagerie de page-HTML vers embed, et réciproquement *
+*********************************************************
+Important : Paramétrer le programme 'WvEmbed.js'
+	- dans le fichier, rechercher PARAMETER_TODO. 
+	- Chaque paramètre est décrit.   
+
+A - Lexique  :
+
+1 - utilisateur : le programmeur qui utilise ce programme.
+	Ne pas confondre avec le spectateur, qui visionnera le programme de "l'utilisateur"
+2 - client  : désignera la page HTML conteneur
+3 - serveur : désignera la page HTML Emdeb
+	Note: les désignations peuvent être inversée si l'embed questionne la page HTML
+	Mais c'est une situation que je n'ai pas rencontré.
+4 - lance-requète : instruction client qui déclenche la requète-vers-l'embed
+	Elle est écrite par l'utilisateur
+5 - cible-requète ou fonction-embed: fonction de l'embed qui recevra et traitera la requète
+	Elle est écrite par l'utilisateur
+	c'est une fonction attachée à la classe 'WvEmbedEvent'
+		elle appelée par : WvEmbedEvent["nom_de_fonction_cible_requète"]
+
+6 - message : donnée - nombre, texte ou tableau - envoyé en paramètre dans la lance-requète
+	cette donnée est transmise à la cible requète
+	contraintes : types reconnus par JSON = identiques à un envoi vers un serveur
+		Attention l'utilisateur NE doit PAS convertir avec JSON. Cette conversion est prise en charge
+		par ce service de messagerie.
+7 - requète : désigne le paquet qui chemine de fonctions en fonction, tout au long du process
+		- le message, sera passé en paramètre à la fonction-embed
+		- le nom de la fonction-embed
+		- l'étape du cheminement en cours
+		- STEP_TO_CLIENT - le serveur envoie la requète au client
+		- STEP_RETURNED_CLIENT - le client retourne la requète au serveur
+		- le nom de ce service-requète §A.9
+		  pour le filtrage à reception de de la réponse - par massagerie 'window'  
+	note : cette requète est transparente pour l'utilisateur.
+8 - la consigne ou stockWaiters : tableau mémorise les requète avant le post vers le client
+9 - service requète : l'occurence classe 'WvEmbedService' qui traite l'échange
+10 - waiter - ou bagage en attente : indormation stockées pas le client en vu du retour de la requète 
+	Ce bagae en attente mémorise
+	- les informations impossibles à convertir avec JSON.
+		- la fonction callback pour renvoyer la réponse à l'utilisateur
+		- une pointeur sur ce service. Utile en cas de délai dépassé 
+	- ou des informations inutiles à l'embed
+		- l'identifiant du timeout du délai maximum. Pour l'arrêt dès lee retour de la requète au serveur
+	- et la requète elle-meme, toujours pour le traitement "hors délai" 
+ 
+	
+B - Process sans erreur
+
+L'utilisateur lance une requète (cf. lance-requète)
+1 - Le message est placé dans le service asynchrone du client
+		> async postWait(message,eventEmbedNameP,delayMaxP)
+		>> postPromise(messageP, eventEmbedNameP, delayP)
+2 - le message est intégré à 2 paquets
+		>>> postInMail(messageP, eventEmbedNameP, thenOkP, thenErrorP, delayP)
+	a - la requète  §A.7 qui circulera de fonction en fonction pour ramener la réponse
+	b - le bagage en attente §A.9 - le waiter - placé dans la consigne - stockWaiters §a.1 - 
+			>>>> service.stockWaiters.add(waiterP)
+3 - La consigne  fournit une clef-d'identification au waiter, et la transmet aussi à la requète
+	Ainsi, au retour la requète dans le serveur, elle pourra retrouver son bagage-waiter
+4 - déclencher de l'alarme de temps à ne pas dépasser
+		<<<< postInMail(messageP, eventEmbedNameP, thenOkP, thenErrorP, delayP)
+	-> elle est accompagnée du waiter et d'un pointeur sur ce service-requète
+5 - Poste la requète vers le client, elle est alors convertie par JSON
+	//________________________________________
+6 - SERVEUR : le serveur reçoit la requète
+		>service.receive(e)
+7 - Il encapsule la requète dans un service ASYNCHRONE
+		>>receiveQuestion(requestP)
+		>>>commandTimeout(request)
+8 - execute la fonction-embed 
+		>>>>WvEmbedEvent[requestP.eventName](requestP.message,o);
+9 - 2 retours possibles
+	- la fonction embed est synchrone : retour avec une simple égalité
+		<<<commandTimeout(request)
+		<<receiveQuestion(requestP)
+		>>answerPost(requestP)
+	  le service asynchrone se charge de l'envoyer au service de poste du serveur
+	- fonctions asynchrone : une fonction calback en paramètre renvoie
+		<<<commandTimeout(request)
+		>>answerPost(requestP)
+	  directement la réponse au service dee poste de l'embed
+	//________________________________________
+10 - RETOUR AU CLIENT : 
+		>service.receive(e)
+		>>receiveAnswer(requestP)
+	Récupère la fonction callback qui renvoi la reponse à l'utilisateur
+11 - Recherche le babage-waiter dans la consigne-stockWaiters
+		>>>getRequestReceived(requestP)
+12 - La réponse est renvoyée dans un tableau : {answer:réponse, question:message}
+		<<receiveAnswer(requestP)
+	si ok
+		< async postWait().then( ici , XXX}
+	si error
+		Note : errorsThrow() est le passage obligé pour toute réponse d'erreur
+		>>>service.WvEmbedErrors.errorsThrow(requestP)
+		< async postWait().then(XXX , ici}
+
+C - Process en cas de délai dépassé
+	//________________________________________
+	TOUJOURS TRAITE SUR LE SERVEUR
+1 - le callback d'alarme est déclenché
+		> onTimeOut(waiterP, serviceP)
+2 - recherche et supprime le bagage-waiter dans !a consigne-stockWaiters
+3 - ajoute ce bagage dans son propre stock de délais dépassés
+    afin de le retrouver si la requète revient ver le CLIENT
+	Note : ce retour sera simplement ignoré puisque l'utlisateur est déjà informé d'une erreur
+4 - extrait la requète du waiter
+5 - inscrit l'erreur de délai dépassé dans la requete    
+6 - utilise la fonc call-back du waiter pour retourner la requète à l'utilisateur
+		>>service.WvEmbedErrors.errorsThrow(requestP)
+		< async postWait().then(XXX , ici}
+
+D - en cas d'erreur retournée par le serveur
+	//________________________________________
+1 - SUR LE SERVEUR
+Principe : l'erreur est simplement inscrite dans la requète : request.errors[]
+	> service.WvEmbedErrors.pushError
+- soit la fonction-embed absente
+- soit une erreur levée par la fonction-embed
+  Les fonctions-embed traite au format javascript : throw new Error(message_d_erreur)
+2 - SUR LE SERVEUR - l'erreur est interceptée par le 'catch' du service asynchrone du client
+    ref. §B.7 : la requète est placée dans un service asynchrone dès son arrivée chez le client
+		< commandTimeout()
+3 - la requète est transmise au service de poste du serveur 
+		> answerPost(requestP)
+	//________________________________________
+4 - RETOUR CHEZ LE CLIENT - traitement "normal" 
+		>receiveAnswer(requestP)
+		Mais ici les erreurs sont détectée dans la requète
+5 - retour au service synchrone du CLIENT
+		>>service.WvEmbedErrors.errorsThrow(requestP)
+		< async postWait().then(XXX , ici}
+
+E - Regles génériques pour l'utilisateur :
+1 - coté serveur (embed)
+a - toujours faire suivre le message de fonction en fonction jusqu'à son traitement
+    faire suivre les fonctions_de_promise : returned 
+	exemple : function totoA(message){return totoB(message, returned, params);}
+				function totoB(message, returned, params){return totoC(message, returned, params);}	
+					function totoC(message, returned, params){...traitement du massage...; returned(answer); }	
+
+F - préparation
+Placer ce fichier js dans la page HTML embed
+
+G - usages des écritures
+	Ouvrir : wvembed_master.html 
+
+1 - côté serveur (page embed) toujours faire :
+Ecrire les cibles-requètes (fonctions de l'embed exécutées par la requète) :
+IMPORTANT : VOIR LES EXEMPLES §1 et §2
+	WvEmbedRequest.$eventId$(message){/ *TODO* /}
+	- $eventId$ sera ne nom de la fonction déclenchée par cette requète
+	  exemple : WvEmbedRequest.ouEnEsTu(message){/ *TODO* /}
+				ici, lee nom de la fonction (eventId) est : ouEnEsTu -> appelé par "ouEnEsTu"
+	- note : cette fonction retournera la réponse attendu, 
+			 sans traitement JSON, mais au format reconnu par JSON 
+             (si la requète attend une réponse)			 
+
+2 - Coté client (page HTML container)
+IMPORTANT : VOIR L'EXEMPLES DE SCRIPT ASYNCHRONE §3 (en commentaire bas de page)
+a - créer un fonction ASYNCHRONE
+	il suffit d'ajoute "async" devant la déclarationd e la fonction
+	Exemple : async function(){}
+b - chaque appel sera une pause
+	il suffit d'ajoute 'await' devant l'appel de la fonction
+c - la fonction a appeler est toujours la même
+	window.wvEmbedRequest.postWait(message, "nonDeLaFonctionEmbedAExecuter", delai_optionnel);
+s - la valeur retournée est un tableau qui comporte 
+	- resul.answer   : la réponse
+	- result.message : le message envoyé
+d - exemple :
+	await function MonScript(){
+		let result =  await window.wvEmbedRequest.postWait("Il fait beau", "onEmbed1", 1000000);
+		alert(result.answer, result.message)
+	}
+e - gestion des Erreur
+	Classique : encapsulez votre script dans try{ ...votre script...}catch(e){...traitez 'e'...}
+f - en résumé
+	fonction asynchrone : asynd / await
+	toujours appeler : window.wvEmbedRequest.postWait(message, action, delai_max_optionel )
+	retourne un tableau {answer:a, message:m}
+	gestion des erreurs classiques
+	voir §3
+ */
