@@ -2,7 +2,7 @@
 /**********************************************************
  *	Messagerie de page-HTML vers embed, et réciproquement
  *	- Paramétrer ce script : rechercher PARAMETER_TODO. Chaque paramètre est décrit.   
- *	- Voir : documentation.txt
+ *	- Voir : doc_embed_request.txt
  * http://localhost:81/tools/ember_request/wvembed_master.html
  */
 //********************************************************************************************************************
