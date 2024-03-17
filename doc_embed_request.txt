@@ -2,7 +2,7 @@
 *********************************************************
 * Messagerie de page-HTML vers embed, et réciproquement *
 *********************************************************
-Important : Paramétrer le programme 'WvEmbed.js'
+Important : paramétrer le programme 'WvEmbed.js'
 	- dans le fichier, rechercher PARAMETER_TODO. 
 	- Chaque paramètre est décrit.
 

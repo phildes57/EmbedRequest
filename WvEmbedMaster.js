@@ -6,6 +6,13 @@ WvEmbedMaster.fonc1="onEmbed1";
 WvEmbedMaster.fonc2="onEmbed2";
 WvEmbedMaster.delai1="1000";
 WvEmbedMaster.delai2="1000000";
+function TEST4(m){
+	alert(m);
+}
+function TEST3(mP, divP){
+	fc = new Function("testP","messageP", "testP(messageP); alert(this.id);")
+	fc.call(divP, TEST4,mP);
+}
 
 /*********************************************************************************************************************
  *										 *Exemple* de script de messagerie asynchrone
@@ -14,7 +21,7 @@ WvEmbedMaster.delai2="1000000";
  // Point d'entrée de la requète : window.wvEmbedRequest.postWait 
  // Paramètres
  // - Message
- // - nom de la fonction exécutée dans l'embed
+ // - nom de la fonction exécutée dansiv_ l'embed
  // - délai (optionnel) : délai maximum d'attente
  //                       si omis la valeur par défaut est de 3 secondes 
 async function testA(){										// Fonction asynchrone

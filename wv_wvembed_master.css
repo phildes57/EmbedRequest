@@ -1,5 +1,7 @@
+		/*[fontph]*/ .Arial_14_404040__l { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 17px; color:#404040;white-space: nowrap; overflow: visible; }
 		/*[fontph]*/ .Arial_10_000000___ { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; color:#000000;white-space: nowrap; overflow: visible; }
 		/*[fontph]*/ .Arial_12_ffffffb__ { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 15px; color:#ffffff; font-weight:bold;white-space: nowrap; overflow: visible; }
+		/*[fontph]*/ .Arial_14_fec501b__ { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 17px; color:#fec501; font-weight:bold;white-space: nowrap; overflow: visible; }
 		/*[fontph]*/ .Arial_16_a901fe___ { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 19px; color:#a901fe;white-space: nowrap; overflow: visible; }
 
 
@@ -22,4 +24,27 @@
 		-ms-user-select: text;
 		user-select: text;
 }
+
+/*----anim__198/w_test_instr-----*/
+.wvembed_master_p0_f0{opacity:0.020;}
+.wvembed_master_p0_f1{opacity:0.069;}
+.wvembed_master_p0_f2{opacity:0.118;}
+.wvembed_master_p0_f3{opacity:0.166;}
+.wvembed_master_p0_f4{opacity:0.215;}
+.wvembed_master_p0_f5{opacity:0.265;}
+.wvembed_master_p0_f6{opacity:0.314;}
+.wvembed_master_p0_f7{opacity:0.362;}
+.wvembed_master_p0_f8{opacity:0.412;}
+.wvembed_master_p0_f9{opacity:0.460;}
+.wvembed_master_p0_f10{opacity:0.510;}
+.wvembed_master_p0_f11{opacity:0.559;}
+.wvembed_master_p0_f12{opacity:0.607;}
+.wvembed_master_p0_f13{opacity:0.656;}
+.wvembed_master_p0_f14{opacity:0.705;}
+.wvembed_master_p0_f15{opacity:0.755;}
+.wvembed_master_p0_f16{opacity:0.804;}
+.wvembed_master_p0_f17{opacity:0.853;}
+.wvembed_master_p0_f18{opacity:0.901;}
+.wvembed_master_p0_f19{opacity:0.950;}
+.wvembed_master_p0_f20{opacity:1.0;}
 
