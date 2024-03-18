@@ -1,104 +1,3 @@
-class WvEmbedEvent{}
-alert("start");
-function WVINIT(){
-	this.embedfc = WER.scs.exSynchro;
-}
-	function WER(){};
-	WER.TYPE_FC = "WvEmbedEvent.";
-	WER.TYPE_FC_LG = WER.TYPE_FC.length;
-	WER.fcCurr = "exSynchro";
-	WER.scs = {};
-	WvEmbedEvent.exSynchro = function(messageP){
-		alert("sync : "+messageP);
-		return 'OK sans délai';
-	};
-	WvEmbedEvent.exA_Synchro = function(messageP){
-		alert("async : "+messageP);
-		return 'OK avec délai';
-	};
-	WER.scs.exSynchro =
-		"		// Exemple de fonction synchrone / traitement immédiat, sans delai d'attente.\n"+	
-		"WvEmbedEvent.exSynchro=function(messageP){\n"+
-		"    alert(messageP);\n"+
-		"	return 'OK sans délai'\n"+
-		"}";
-	WER.scs.exA_Synchro =	
-		"		// Exemple de fonction asynchrone / traitement avec delai d'attente ou interruption\n"+	
-		"		//   Ici 'setTimeout(), mais ce pourrait être requète PHP...'\n"+	
-		"WvEmbedEvent.exA_Synchro=function(messageP, returned){\n"+
-		"	let fcDelai = function(messageP, returned){\n"+
-		"		alert('tempo='+messageP);\n"+
-		"		returned('OK' avec delai);	// IMPORTANT : retour avec 'returned()'\n"+
-		"	};							// Params pour callback de setTimeout : message et returned\n"+								
-		"	setTimeout(fcDelai,2000,messageP, returned);\n"+
-		"}";
-
-function WVMODELENEXT(){
-	let nameCurr=null;					// Recherche la fonctions suivante
-	let name1;							// Mémorise le nom de la 1ère fonction
-	let vu = false;
-	for(let name in WER.scs){
-		if(name1==null) name1=name;
-		if(vu){
-			nameCurr=name;
-			break;
-		}
-		if(name==WER.fcCurr){
-			vu=true;
-		}
-	}
-	if(nameCurr==null){					// Si non trouvée, récupère la 1ère
-		nameCurr=name1;
-	}
-	WER.fcCurr = nameCurr;
-	this.embedfc = WER.scs[WER.fcCurr];
-}
-
-
-function TEST5(){
-
-				//WvEmbedEvent.
-let sc = this.embedfc.trim();
-//let sc = 'WvEmbedEvent.aa=function(bb,cc){alert("ddd")}'
-
-if(sc.indexOf(WER.TYPE_FC)<0){
-	alert("la fonction doit être placée dans WvEmbedEvent\n"+
-		"    ex : WvEmbedEvent.maFonc=function(messageP, returnP){...}");
-	this.embedfc = WER.TYPE_FC+this.embedfc; 
-	return;
-} 
-				// NOM
-let pos = sc.indexOf("=", WER.TYPE_FC_LG);
-if(pos<0){ alert("'=' est attendu après le nom de fonction;"); return;}
-let nom = sc.substring(WER.TYPE_FC_LG,pos).trim();
-				// PARAMS
-pos = pos = sc.indexOf("(", pos);
-let posFin = sc.indexOf(")", ++pos);
-let params=[];
-let posNext;
-while((posNext=sc.indexOf(',',pos)) >=0 && posNext<posFin){
-	params.push(sc.substring(pos, posNext).trim());
-	pos= posNext+1;
-}
-let paramFin=sc.substring(pos,posFin).trim();
-if(paramFin.length>0){
-	params.push(paramFin);
-}
-				// BODY
-pos = sc.indexOf("{", posFin); if(pos<0){ alert("'{' attendu"); return;}
-posFin = sc.lastIndexOf("}"); if(pos>posFin){ alert("'}' attendu après '{'"); return;};
-let body =  sc.substring(pos, posFin+1);
-
-//let newFonc=function(params, body){return new Function("new Function("+params+",'"+body+"')");};
-let newFonc;
-switch(params.length){
-	case 0 : newFonc=new Function(body); break;
-	case 1 : newFonc=new Function(params[0],body); break;
-	case 2 : newFonc=new Function(params[0],params[1],body); break;
-}
-WER.scs[nom]=sc;
-WvEmbedEvent[nom]=newFonc;
-};
 /**********************************************************
  *	Messagerie de page-HTML vers embed, et réciproquement
  *	- Paramétrer ce script : rechercher PARAMETER_TODO. Chaque paramètre est décrit.   
@@ -141,6 +40,7 @@ String.prototype.wvVarC=function(varsP, startP){
  *					IMPORTANT 1 : n'est utile que pour les fonctions asynchrones : setTimeout(), accès serveur...
  *					IMPORTANT 2 : Pour toutes les autre fonctions, la plupart en réalité, on utilisera "return" 
  */
+class WvEmbedEvent{}
 
 	/**
 	 * Utilitaire proposé aux fonctions-cible-requète.

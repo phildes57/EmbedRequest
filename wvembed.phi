@@ -5,12 +5,12 @@ Ph_Sprite="_EAnim.AnimComponent.Ph_Sprite"
 tabobj="_EAnim.AnimComponent.tabobj"
 Ph_Piece="_EAnim.AnimComponent.Ph_Piece"
 PhKey="_EAnim.AnimComponent.PhKey"
-actScript="_EAnim.AnimComponent.Action.PhActionScript"
 couchtab="_EAnim.AnimComponent.couchtab"
 couche="_EAnim.AnimComponent.couche"
 PhColorGradient="phUtil.PhComponent.PhColorGradient"
 PhColorTab="phUtil.PhComponent.PhColorTab"
 PhColor="phUtil.PhComponent.PhColor"
+actScript="_EAnim.AnimComponent.Action.PhActionScript"
 txtaff="_EAnim.AnimComponent.txtaff"
 txtstyle="_EAnim.AnimComponent.txtstyle"
 txttab="_EAnim.AnimComponent.txttab"
@@ -31,10 +31,10 @@ PhListGroupAccess="_EAnim.FensVolantes.FenWithSpecificComponent.PhListGroupAcces
 <scale>1000</scale>
 <url_js>"! (No url)\ "</url_js>
 <projet><fond>800 800 255 255 255 61</fond>
-<attrs>16 1 22 -1 -1 3 </attrs>
+<attrs>16 1 20 -1 -1 3 </attrs>
 </projet><composants><newlib><librairi>
 <libattrs>fond_opaque nom_var_not_globales</libattrs>
-<attrs>100 81</attrs>
+<attrs>100 82</attrs>
 </librairi>
 </newlib><table>
 
@@ -53,7 +53,7 @@ PhListGroupAccess="_EAnim.FensVolantes.FenWithSpecificComponent.PhListGroupAcces
 <tabobj><table>
 0 <Ph_Piece><id>-1 15 "w_embed" 0
 </id>
-<attrs>1 1 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
 <table>
 <piste><attrs> 0 0</attrs>
 <table>
@@ -77,9 +77,6 @@ PhListGroupAccess="_EAnim.FensVolantes.FenWithSpecificComponent.PhListGroupAcces
 </piste>
 <piste><attrs> 0 4</attrs>
 <table>
-0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
-"import(WvEmbed);"
-</actScript>
 </table>
 </piste>
 <piste><attrs> 0 5</attrs>
@@ -109,7 +106,7 @@ PhListGroupAccess="_EAnim.FensVolantes.FenWithSpecificComponent.PhListGroupAcces
 </table>
 </Ph_Piece>
 
-1 <Ph_Piece><id>-1 15 "sans_nom16" 0
+1 <Ph_Piece><id>-1 15 "w_script" 0
 </id>
 <attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
 <table>
@@ -176,7 +173,7 @@ PhListGroupAccess="_EAnim.FensVolantes.FenWithSpecificComponent.PhListGroupAcces
 230 221 253 255
 </PhColor>
 </PhColorTab> -1</PhColorGradient> 0 <overflow>0<overflow>-2147483648</background>
-<css>"""""""""""                                                                  /*refresh*/WvBubblePlayer.refreshMax=1;/*refresh*/"""""
+<css>"""""""""""                                                                                 /*refresh*/WvBubblePlayer.refreshMax=1;/*refresh*/"""""
 </css>
 </face_common> </Ph_Sprite>
 
@@ -248,11 +245,11 @@ _xMouse 1 40
 
 1 <Ph_Piece><id>-1 15 "w_didac" 0
 <options>
-_yMouse 1 89
-_xMouse 1 682
+_yMouse 1 332
+_xMouse 1 188
 </options>
 </id>
-<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020098 X X X X 0 0 0 0 0 </attrs>
 <table>
 <piste><attrs> 0 0</attrs>
 <table>
@@ -423,8 +420,8 @@ _xMouse 1 682
 </table>
 <couchtab><attrs>10 5</attrs>
 <table>
-0 <couche> 0 3 0</couche>
-1 <couche> 0 2 1</couche>
+0 <couche> 0 2 0</couche>
+1 <couche> 0 3 1</couche>
 2 <couche> 0 1 2</couche>
 3 <couche> 0 0 3</couche>
 4 <null></null>
@@ -517,27 +514,27 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 <Ph_Sprite>
 <id>5 11 "anim__15" 1
 </id>
-<attrs>110 4 10 1  1024 </attrs>
+<attrs>109 4 10 1  1024 </attrs>
 <tabobj><table>
 0 <Ph_Piece><id>-1 15 "sans_nom12701" 0
 </id>
-<attrs>1 1 21 7 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
+<attrs>1 1 21 10 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
 <table>
 <piste><attrs> 0 0</attrs>
 <table>
-0 <PhKey>1 0</PhKey>
+0 <PhKey>1 81</PhKey>
 10 <PhKey>1 18</PhKey>
 </table>
 </piste>
 <piste><attrs> 0 1</attrs>
 <table>
-0 <PhKey>1 -11</PhKey>
+0 <PhKey>1 318</PhKey>
 10 <PhKey>1 -379</PhKey>
 </table>
 </piste>
 <piste><attrs> 0 2</attrs>
 <table>
-0 <PhKey>1 8</PhKey>
+0 <PhKey>1 -64</PhKey>
 10 <PhKey>1 -221</PhKey>
 </table>
 </piste>
@@ -560,6 +557,9 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 </piste>
 <piste><attrs> 0 7</attrs>
 <table>
+0 <PhKey>1 100</PhKey>
+9 <PhKey>1 100</PhKey>
+10 <PhKey>1 0</PhKey>
 </table>
 </piste>
 <piste><attrs> 0 8</attrs>
@@ -579,8 +579,8 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 
 1 <Ph_Piece><id>-1 15 "w_acriptarea" 0
 <options>
-_yMouse 1 95
-_xMouse 1 453
+_yMouse 1 109
+_xMouse 1 244
 </options>
 </id>
 <attrs>1 1 21 8 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
@@ -1447,8 +1447,8 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 <tabobj><table>
 0 <Ph_Piece><id>-1 15 "adjust" 0
 <options>
-_yMouse 1 97
-_xMouse 1 670
+_yMouse 1 202
+_xMouse 1 484
 </options>
 <AttrsEditor>
 "adjust();"
@@ -1511,8 +1511,8 @@ _xMouse 1 670
 
 1 <Ph_Piece><id>-1 15 "w_button_simple" 0
 <options>
-_yMouse 1 9
-_xMouse 1 50
+_yMouse 1 3
+_xMouse 1 55
 </options>
 </id>
 <attrs>1 1 1 5 0 -1 0 0 0 0 22020096 _flag2 32767 X X X X 0 0 0 0 0 </attrs>
@@ -1573,8 +1573,8 @@ _xMouse 1 50
 
 2 <Ph_Piece><id>-1 15 "w_text_input" 0
 <options>
-_yMouse 1 73
-_xMouse 1 448
+_yMouse 1 87
+_xMouse 1 239
 </options>
 </id>
 <attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
@@ -1632,8 +1632,8 @@ _xMouse 1 448
 
 3 <Ph_Piece><id>-1 15 "w_button_simple0" 0
 <options>
-_yMouse 1 5
-_xMouse 1 67
+_yMouse 1 12
+_xMouse 1 39
 </options>
 </id>
 <attrs>1 1 1 5 0 -1 0 0 0 0 22036480 _flag2 32767 X X X X 0 0 0 0 0 </attrs>
@@ -1694,8 +1694,8 @@ _xMouse 1 67
 
 4 <Ph_Piece><id>-1 15 "w_init" 0
 <options>
-_yMouse 1 6
-_xMouse 1 21
+_yMouse 1 2
+_xMouse 1 18
 </options>
 </id>
 <attrs>1 0 1 5 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
@@ -1723,7 +1723,7 @@ _xMouse 1 21
 <piste><attrs> 0 4</attrs>
 <table>
 0 <actScript>20 0 <ActionInfos> 804000 </ActionInfos>   1
-"//alert(&quot;init&quot;);<br>WVINIT.call(this);"
+"import(WvEmbed_tuto);<br>import(WvEmbed);<br>//alert(&quot;init&quot;);<br>//WVINIT.call(this);<br>WER.init(this);"
 </actScript>
 </table>
 </piste>
@@ -1764,11 +1764,11 @@ _xMouse 1 21
 </table>
 </couchtab>
 </tabobj>
-<face_common><background><PhColorGradient>0 mult 100 1300 20500 1300 300 1 <PhColorTab><attrs>10 1</attrs>
+<face_common><background><PhColorGradient>0 mult 100 8900 20500 8900 300 1 <PhColorTab><attrs>10 1</attrs>
 <PhColor>
 128 128 255 255
 </PhColor>
-</PhColorTab> -1</PhColorGradient> 0 <overflow>0<overflow>-1</background>
+</PhColorTab> -1</PhColorGradient> 0 <overflow>0<overflow>-2147483648</background>
 </face_common> </Ph_Sprite>
 
 
@@ -1975,7 +1975,7 @@ _xMouse 1 2
 </table>
 </couchtab>
 </tabobj>
-<face_common><background><PhColorGradient>0 mult 100 73200 19200 73200 1600 1 <PhColorTab><attrs>10 1</attrs>
+<face_common><background><PhColorGradient>0 mult 100 73300 19200 73300 1600 1 <PhColorTab><attrs>10 1</attrs>
 <PhColor>
 201 201 248 255
 </PhColor>
@@ -1983,7 +1983,7 @@ _xMouse 1 2
 <PhColor>
 128 128 255 255
 </PhColor>
-</PhColorTab> -1</PhColorGradient> </border> <overflow>0<overflow>-1</background>
+</PhColorTab> -1</PhColorGradient> </border> <overflow>0<overflow>-2147483648</background>
 </face_common> </Ph_Sprite>
 
 
@@ -2579,8 +2579,8 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 <tabobj><table>
 0 <Ph_Piece><id>-1 15 "value" 0
 <options>
-_yMouse 1 30
-_xMouse 1 108
+_yMouse 1 130
+_xMouse 1 157
 </options>
 </id>
 <attrs>1 1 1 5 0 -1 0 0 0 0 0 _flag2 32767 "" "" X X 0 0 0 0 0 </attrs>
@@ -2641,8 +2641,8 @@ _xMouse 1 108
 
 1 <Ph_Piece><id>-1 15 "adjust" 0
 <options>
-_yMouse 1 17
-_xMouse 1 264
+_yMouse 1 87
+_xMouse 1 239
 </options>
 <AttrsEditor>
 "adjust();"
@@ -2817,8 +2817,8 @@ _xMouse 1 264
 
 4 <Ph_Piece><id>-1 15 "textarea" 0
 <options>
-_yMouse 1 17
-_xMouse 1 264
+_yMouse 1 87
+_xMouse 1 239
 </options>
 <AttrsEditor>
 "align(0,null,0,null,null,null,null,null,null,1000,null,1000,null);"
@@ -4573,8 +4573,8 @@ _xMouse 1 82
 
 2 <Ph_Piece><id>-1 15 "bttxt" 0
 <options>
-_yMouse 1 14
-_xMouse 1 22
+_yMouse 1 9
+_xMouse 1 8
 </options>
 </id>
 <attrs>1 0 4 12 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
@@ -4710,7 +4710,7 @@ _xMouse 1 22
 </table>
 </couchtab>
 </tabobj>
-<pages>0 0 13 0 </pages> <face_common><background><PhColorGradient>0 mult 100 63700 20500 63700 18900 1 <PhColorTab><attrs>10 2</attrs>
+<pages>0 0 13 0 </pages> <face_common><background><PhColorGradient>0 mult 100 71300 20500 71300 18900 1 <PhColorTab><attrs>10 2</attrs>
 <PhColor>
 227 227 250 255
 </PhColor>
@@ -4812,6 +4812,10 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 <attrs>100 4 10 1  33557506 pages_ pages_  0 1 2 1 0 115 16 -3</attrs>
 <tabobj><table>
 0 <Ph_Piece><id>-1 15 "adjust" 0
+<options>
+_yMouse 1 10
+_xMouse 1 83
+</options>
 </id>
 <attrs>1 0 4 4 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
 <table>
@@ -4929,8 +4933,8 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 
 2 <Ph_Piece><id>-1 15 "bttxt" 0
 <options>
-_yMouse 1 6
-_xMouse 1 4
+_yMouse 1 14
+_xMouse 1 7
 </options>
 </id>
 <attrs>1 0 4 12 0 -1 0 0 0 0 0 X X X X 0 0 0 0 0 </attrs>
@@ -5066,7 +5070,7 @@ _xMouse 1 4
 </table>
 </couchtab>
 </tabobj>
-<pages>0 0 13 0 </pages> <face_common><background><PhColorGradient>0 mult 100 50900 20500 50900 18900 1 <PhColorTab><attrs>10 2</attrs>
+<pages>0 0 13 0 </pages> <face_common><background><PhColorGradient>0 mult 100 58500 20500 58500 18900 1 <PhColorTab><attrs>10 2</attrs>
 <PhColor>
 227 227 250 255
 </PhColor>
@@ -5162,8 +5166,8 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 <tabobj><table>
 0 <Ph_Piece><id>-1 15 "text" 0
 <options>
-_yMouse 1 17
-_xMouse 1 23
+_yMouse 1 7
+_xMouse 1 27
 </options>
 </id>
 <attrs>1 0 1 4 0 -1 0 0 0 0 22020098 _flag2 32767 X X X X 0 0 0 0 0 </attrs>
@@ -5221,11 +5225,11 @@ _xMouse 1 23
 
 1 <Ph_Piece><id>-1 15 "select" 0
 <options>
-_yMouse 1 11
-_xMouse 1 16
+_yMouse 1 9
+_xMouse 1 4
 </options>
 </id>
-<attrs>1 1 1 4 0 -1 0 0 0 0 22020098 X X X X 0 0 0 0 0 </attrs>
+<attrs>1 1 1 4 0 -1 0 0 0 0 22020096 X X X X 0 0 0 0 0 </attrs>
 <table>
 <piste><attrs> 0 0</attrs>
 <table>
@@ -5304,6 +5308,17 @@ Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 </id>
 <coords>0 0 16 18 non_icon</coords>
 3 0 0 0 1</fillrect>
+
+
+//------- Compos # 81 -------------------------------
+<txtaff><id>81 2 "txt" 0
+</id>
+<coords>0 0 138 17 non_icon</coords>
+<txtstyle>"sans_nom12702" "Arial" 12 0 1 0 255 255 255 "Arial"</txtstyle>
+<txttab><attrs>1 1</attrs>
+"PAGE HTML EMBED"
+</txttab>
+Fixe Non_saisie <var_name>"varNameDefault"</var_name></txtaff>
 </table>
 </composants><PhListGroupAccess><txttab><attrs>3 3</attrs>
 "*** ajouter ***"

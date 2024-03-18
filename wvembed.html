@@ -22,7 +22,8 @@
 	<script type="text/javascript" src="wv_.js"	></script>
 	<!--[/edidget_player]-->
 	<!--[edidget_classes]-->
-			<script src="WvEmbed.js"></script>
+			<script src="WvEmbed_tuto.js"></script>
+		<script src="WvEmbed.js"></script>
 
 	<!--[/edidget_classes]-->
 	<!--[edidget_custom#wvembed]-->
@@ -45,43 +46,6 @@
 
 				this.wvBuildGroup(1);
 			}; div_.wvDivOpen(); /*open*/</script>
-			<div id='w_didac' style="left:-775.0px; top:-414.0px; width:771.0px; height:525.0px;  z-index:1; visibility:visible;  position : absolute;  overflow : visible;   " >
-				<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
-
-					this.wvBuildFace();
-				}; div_.wvDivOpen(); /*open*/</script>
-			<p style="font-family: Arial; font-size: 16px; color: #0000FF; text-align: left; position: absolute;">
-			page&nbsp;HTML&nbsp;&quot;EMBED&quot;</b><span style=" color: #000000;"><b><br>
-			</b><br>
-			IMPORTANT&nbsp;1&nbsp;:&nbsp;le&nbsp;fichier&nbsp;&quot;WvEmbed.js&quot;&nbsp;doit&nbsp;toujours&nbsp;accompagner&nbsp;cette&nbsp;page-HTML-embed<br>
-			IMPORTANT&nbsp;2&nbsp;:&nbsp;param&eacute;trez&nbsp;&quot;WvEmbed.js&quot;&nbsp;-&nbsp;rechercher&nbsp;</span><span style=" font-size: 12px;"><span style=" color: #000000;">PARAMETER_TODO&nbsp;dans&nbsp;le&nbsp;script.</span></span><span style=" color: #000000;"><br>
-			<br>
-			Il&nbsp;vous&nbsp;suffit&nbsp;d&apos;ajouter&nbsp;les&nbsp;fonctions&nbsp;qui&nbsp;recevront&nbsp;les&nbsp;requ&egrave;tes&nbsp;de&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principale.<br>
-			</span><br>
-			-&nbsp;bleu&nbsp;:&nbsp;&agrave;&nbsp;recopier&nbsp;tel&nbsp;quel<span style=" color: #008000;"><br>
-			-&nbsp;vert&nbsp;:&nbsp;valeur&nbsp;inscrite&nbsp;en&nbsp;param&egrave;tres,&nbsp;dans&nbsp;l&apos;appel&nbsp;de&nbsp;la&nbsp;page&nbsp;HTML&nbsp;principale</span><span style=" color: #CB09CB;"><br>
-			-&nbsp;violet&nbsp;:&nbsp;valeur&nbsp;r&eacute;cup&eacute;r&eacute;&nbsp;dans&nbsp;le&nbsp;script&nbsp;de&nbsp;la&nbsp;page&nbsp;principal</span><span style=" color: #000000;"><br>
-			______________________________________________________________<br>
-			Exemple&nbsp;de&nbsp;fonction&nbsp;synchrone:<br>
-			</span><b><br>
-			WvEmbedEvent.</b><span style=" color: #008000;"><b>fonc1</b></span><span style=" color: #000000;">&nbsp;</span><b>=&nbsp;function(</b><span style=" color: #008000;"><b>messageP</b></span><b>){					</b><span style=" color: #000000;"><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(&quot;Oui&nbsp;je&nbsp;suis&nbsp;l&apos;embed&nbsp;2&nbsp;&quot;+messageP);&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=" color: #6B6B83;">//&nbsp;Placez&nbsp;ici&nbsp;votre&nbsp;script</span><span style=" color: #000000;"><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>return&nbsp;</b><span style=" color: #CB09CB;"><b>&quot;Voil&agrave;&nbsp;le&nbsp;r&eacute;sultat&quot;</b></span><b>;<br>
-			};<br>
-			</b><span style=" color: #000000;">______________________________________________________________<br>
-			Exemple&nbsp;de&nbsp;fonction&nbsp;asynchrone:&nbsp;<br>
-			</span><b><br>
-			WvEmbedEvent.</b><span style=" color: #008000;"><b>fonc1</b></span><span style=" color: #000000;"><b>&nbsp;</b></span><b>=&nbsp;function(</b><span style=" color: #008000;"><b>messageP</b></span><b>,returned){					</b><span style=" color: #000000;"><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(												<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;	(</span><span style=" color: #008000;"><b>messageP</b></span><b>,returned</b><span style=" color: #000000;">){<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(&quot;Oui&nbsp;je&nbsp;suis&nbsp;l&apos;embed&nbsp;1&quot;+messageP);<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=" color: #008000;"><b>returned</b></span><span style=" color: #000000;">(</span><span style=" color: #CB09CB;"><b>&quot;Voil&agrave;&nbsp;le&nbsp;r&eacute;sultat&quot;</b></span><span style=" color: #000000;">);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</span><span style=" color: #4D4D6B;">/&nbsp;Notez&nbsp;que&nbsp;le&nbsp;retour&nbsp;sera&nbsp;envoy&eacute;&nbsp;par&nbsp;:&nbsp;returned(reponse)&nbsp;<br>
-			</span><span style=" color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=" color: #4D4D6B;">//&nbsp;&nbsp;fonction&nbsp;callback</span><span style=" color: #000000;"><br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3000,&nbsp;</span><span style=" color: #008000;"><b>messageP</b></span><b>,&nbsp;returned</b><span style=" color: #000000;"><br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);						&nbsp;</span><b><br>
-			};</b><span style=" color: #000000;"><br>
-			&nbsp;</span></p>
-			</div>
 			<div id='w_button_simple' 
 				onclick='
 					let script = "WvEmbedEvent.fonc1 = function(messageP){\n"+ " console.log(&apos;Oui je suis l&apos;embed 2 &apos;+messageP); // Placez ici votre script\n"+ " return &apos;Voilà le résultat&apos;;\n"+ "};"; navigator.clipboard.writeText(script);
@@ -101,20 +65,39 @@
 						<p id='line0' style="margin: 1px 0px;">Copier&nbsp;le&nbsp;script</p>
 			</div>
 		</div>
-		<div id='sans_nom16' style="left:400.0px; top:227.0px;  z-index:1; visibility:visible;  position : absolute;  overflow : visible;   " >
+		<div id='w_script' style="left:400.0px; top:227.0px;  z-index:1; visibility:visible;  position : absolute;  overflow : visible;   " >
 			<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
 
 				this.wvBuildGroup(21);
 			}; div_.wvDivOpen(); /*open*/</script>
-			<div id='sans_nom12701' class='Arial_12_ffffff__c' style="left:-379.0px; top:-221.0px; width:138.0px; height:17.0px;  z-index:3;  text-align:center; visibility:hidden;  position : absolute;  overflow : visible;   " >
+			<div id='sans_nom12701' class='wvembed_p0_f0' style=" z-index:3; filter : alpha(opacity=0.0);opacity : 0.0;visibility:visible;  position : absolute;  overflow : visible;   " >
 				<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
 
-					this.wvBuildFace();
-					this.wvFramesVisibles(10,21);
+					this.wvBuildTransformer();
+					this.wvTracks=[];
+					this.wvTracks[0]=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0];
+					this.wvTracks[1]=["318.0px","248.3px","178.6px","108.89px","39.2px","-30.5px","-100.2px","-169.89px","-239.59px","-309.29px","-379.0px","-379.0px","-379.0px","-379.0px","-379.0px","-379.0px","-379.0px","-379.0px","-379.0px","-379.0px","-379.0px"];
+					this.wvTracks[2]=["-64.0px","-79.69px","-95.4px","-111.09px","-126.8px","-142.5px","-158.19px","-173.89px","-189.6px","-205.3px","-221.0px","-221.0px","-221.0px","-221.0px","-221.0px","-221.0px","-221.0px","-221.0px","-221.0px","-221.0px","-221.0px"];
+					this.wvTracks[7]=[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0];
+					this.wvAnimInit();
+					this.wvAnimClassName='wvembed_p0_f'; this.wvTrackClass=[0,1,2,3,4,5,6,7,8,9,10,-1,-2,-3,-4,-5,-6,-7,-8,-9,20]; this.flagAnimNull=[true,true,false];
 				}; div_.wvDivOpen(); /*open*/</script>
-				<p id='line0' style="margin: 0px 0px;">PAGE&nbsp;HTML&nbsp;EMBED</p>
+				<div id='f__0' class='Arial_12_ffffff__c' style="width:138.0px; height:17.0px;  text-align:center; visibility:visible;  position : absolute;  overflow : visible;   " >
+					<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
+
+						this.wvBuildState();
+					}; div_.wvDivOpen(); /*open*/</script>
+					<p id='line0' style="margin: 0px 0px;">PAGE&nbsp;HTML&nbsp;EMBED</p>
+				</div>
+				<div id='f__1' class='Arial_12_ffffff__c' style="width:138.0px; height:17.0px;  text-align:center; visibility:hidden;  position : absolute;  overflow : visible;   " >
+					<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
+
+						this.wvBuildState();
+					}; div_.wvDivOpen(); /*open*/</script>
+					<p id='line0' style="margin: 0px 0px;">PAGE&nbsp;HTML&nbsp;EMBED</p>
+				</div>
 			</div>
-			<div id='w_acriptarea' class='wvembed_p0_f0' style="width:744.0px; height:202.0px;  z-index:1; visibility:visible;  position : absolute;  overflow : hidden;  background-color:rgb(128,128,255); overflow:hidden; " >
+			<div id='w_acriptarea' class='wvembed_p1_f0' style="width:744.0px; height:202.0px;  z-index:1; visibility:visible;  position : absolute;  overflow : hidden;  background-color:rgb(128,128,255); overflow:hidden; " >
 				<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
 
 					this.wvBuildGroup(1);
@@ -122,7 +105,7 @@
 					this.wvTracks[1]=["365.0px","289.79px","214.6px","139.39px","64.2px","-11.0px","-86.2px","-161.4px","-236.59px","-311.79px","-387.0px","-311.79px","-236.6px","-161.39px","-86.2px","-11.0px","64.2px","139.4px","214.59px","289.79px","365.0px"];
 					this.wvTracks[2]=["-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px","-224.0px"];
 					this.wvAnimInit();
-					this.wvAnimClassName='wvembed_p0_f'; this.wvTrackClass=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]; this.flagAnimNull=[true,false,false];
+					this.wvAnimClassName='wvembed_p1_f'; this.wvTrackClass=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]; this.flagAnimNull=[true,false,false];
 				}; div_.wvDivOpen(); /*open*/</script>
 				<div id='w_button_simple' 
 					onclick='
@@ -166,18 +149,6 @@ sur l'écran.</textarea>
 				<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;/*wvtype:html5face 003*/this.wvBuildFace();WvButton_S.initFlat(this);}; div_.wvDivOpen(); /*open*/</script>
 							<p id='line0' style="margin: -2px 0px;">Compiler</p>
 				</div>
-				<div id='w_init' style="left:20.0px; top:183.0px;  z-index:4; visibility:visible;  position : absolute;  overflow : visible;   " >
-					<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
-
-						this.wvBuildGroup(1);
-						this.wvEventFrame=WvTree.wvEventFrame;
-						this.onWvFrame=[];
-						this.onWvFrame[1]=function(){
-						WVINIT.call(this._group);
-						};
-						new WvAction(this.onWvFrame[1], this, 0);
-					}; div_.wvDivOpen(); /*open*/</script>
-				</div>
 			</div>
 			<div id='_stop__phi_'  style=" visibility : visible; position : absolute; left:0px; top:0px; width:1px; height:1px; z-index:0; position : absolute;">
 				<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
@@ -190,7 +161,7 @@ sur l'écran.</textarea>
 				this.wvAnimInit();
 				}; div_.wvDivOpen(); /*open*/</script>
 			</div>
-			<div id='sans_nom8043' class='wvembed_p1_f0' 
+			<div id='sans_nom8043' class='wvembed_p2_f0' 
 				onclick='
 					this._group.play();
 				'
@@ -202,7 +173,7 @@ sur l'écran.</textarea>
 					this.wvTracks[1]=["347.0px","345.5px","344.0px","342.5px","341.0px","339.5px","338.0px","336.5px","335.0px","333.5px","332.0px","333.39px","334.79px","336.2px","337.6px","339.0px","340.39px","341.79px","343.2px","344.6px","346.0px"];
 					this.wvTracks[2]=["-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px","-211.0px"];
 					this.wvAnimInit();
-					this.wvAnimClassName='wvembed_p1_f'; this.wvTrackClass=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]; this.flagAnimNull=[true,false,false];
+					this.wvAnimClassName='wvembed_p2_f'; this.wvTrackClass=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]; this.flagAnimNull=[true,false,false];
 				}; div_.wvDivOpen(); /*open*/</script>
 				<div id='sans_nom8062' class='Arial_8_0000ff__c' style="left:4.0px; top:11.0px; width:10.0px; height:156.0px;  z-index:1;  text-align:center; visibility:visible;  position : absolute;  overflow : visible;   " >
 					<script>/*open*/ var div_= WvTree.getDiv(); div_.wvDivOpen=function(){ if(this.wvIsDivOpened!=null) return; this.wvIsDivOpened=true;
